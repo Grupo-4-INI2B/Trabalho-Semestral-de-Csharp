@@ -27,5 +27,17 @@ namespace trblh_semestral
             FrmPesquisa frmPesquisa = new FrmPesquisa();
             frmPesquisa.ShowDialog();
         }
+
+        private void BtnCadastro_Click(object sender, EventArgs e)
+        {
+            FrmCadastro frmCadastro = new FrmCadastro();
+            frmCadastro.ShowDialog();
+        }
+
+        private void BtnInformacoes_Click(object sender, EventArgs e)
+        {
+            FrmInformacoes frmInformacoes = new FrmInformacoes();
+            frmInformacoes.ShowDialog();
+        }
     }
 }

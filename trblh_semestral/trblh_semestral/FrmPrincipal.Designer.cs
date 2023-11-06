@@ -51,6 +51,7 @@
             this.BtnCadastro.TabIndex = 1;
             this.BtnCadastro.Text = "Cadastro";
             this.BtnCadastro.UseVisualStyleBackColor = true;
+            this.BtnCadastro.Click += new System.EventHandler(this.BtnCadastro_Click);
             // 
             // BtnInformacoes
             // 
@@ -60,6 +61,7 @@
             this.BtnInformacoes.TabIndex = 2;
             this.BtnInformacoes.Text = "Informações do Sistema";
             this.BtnInformacoes.UseVisualStyleBackColor = true;
+            this.BtnInformacoes.Click += new System.EventHandler(this.BtnInformacoes_Click);
             // 
             // FrmPrincipal
             // 
