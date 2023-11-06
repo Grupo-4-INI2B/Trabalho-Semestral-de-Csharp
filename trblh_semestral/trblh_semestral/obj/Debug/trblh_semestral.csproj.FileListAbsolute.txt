@@ -1,0 +1,6 @@
+C:\Users\wilju\OneDrive\Documents\GitHub\Trabalho-Semestral-de-Csharp\trblh_semestral\trblh_semestral\obj\Debug\trblh_semestral.csproj.AssemblyReference.cache
+C:\Users\wilju\OneDrive\Documents\GitHub\Trabalho-Semestral-de-Csharp\trblh_semestral\trblh_semestral\obj\Debug\trblh_semestral.csproj.SuggestedBindingRedirects.cache
+C:\Users\wilju\OneDrive\Documents\GitHub\Trabalho-Semestral-de-Csharp\trblh_semestral\trblh_semestral\obj\Debug\trblh_semestral.FrmPrincipal.resources
+C:\Users\wilju\OneDrive\Documents\GitHub\Trabalho-Semestral-de-Csharp\trblh_semestral\trblh_semestral\obj\Debug\trblh_semestral.Properties.Resources.resources
+C:\Users\wilju\OneDrive\Documents\GitHub\Trabalho-Semestral-de-Csharp\trblh_semestral\trblh_semestral\obj\Debug\trblh_semestral.csproj.GenerateResource.cache
+C:\Users\wilju\OneDrive\Documents\GitHub\Trabalho-Semestral-de-Csharp\trblh_semestral\trblh_semestral\obj\Debug\trblh_semestral.csproj.CoreCompileInputs.cache
