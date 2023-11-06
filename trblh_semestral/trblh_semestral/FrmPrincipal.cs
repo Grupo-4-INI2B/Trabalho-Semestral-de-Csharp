@@ -21,5 +21,11 @@ namespace trblh_semestral
         {
 
         }
+
+        private void BtnPesquisa_Click(object sender, EventArgs e)
+        {
+            FrmPesquisa frmPesquisa = new FrmPesquisa();
+            frmPesquisa.ShowDialog();
+        }
     }
 }

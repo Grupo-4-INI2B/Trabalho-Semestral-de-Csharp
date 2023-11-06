@@ -4,3 +4,8 @@ C:\Users\wilju\OneDrive\Documents\GitHub\Trabalho-Semestral-de-Csharp\trblh_seme
 C:\Users\wilju\OneDrive\Documents\GitHub\Trabalho-Semestral-de-Csharp\trblh_semestral\trblh_semestral\obj\Debug\trblh_semestral.Properties.Resources.resources
 C:\Users\wilju\OneDrive\Documents\GitHub\Trabalho-Semestral-de-Csharp\trblh_semestral\trblh_semestral\obj\Debug\trblh_semestral.csproj.GenerateResource.cache
 C:\Users\wilju\OneDrive\Documents\GitHub\Trabalho-Semestral-de-Csharp\trblh_semestral\trblh_semestral\obj\Debug\trblh_semestral.csproj.CoreCompileInputs.cache
+C:\Users\wilju\OneDrive\Documents\GitHub\Trabalho-Semestral-de-Csharp\trblh_semestral\trblh_semestral\bin\Debug\trblh_semestral.exe.config
+C:\Users\wilju\OneDrive\Documents\GitHub\Trabalho-Semestral-de-Csharp\trblh_semestral\trblh_semestral\bin\Debug\trblh_semestral.exe
+C:\Users\wilju\OneDrive\Documents\GitHub\Trabalho-Semestral-de-Csharp\trblh_semestral\trblh_semestral\bin\Debug\trblh_semestral.pdb
+C:\Users\wilju\OneDrive\Documents\GitHub\Trabalho-Semestral-de-Csharp\trblh_semestral\trblh_semestral\obj\Debug\trblh_semestral.exe
+C:\Users\wilju\OneDrive\Documents\GitHub\Trabalho-Semestral-de-Csharp\trblh_semestral\trblh_semestral\obj\Debug\trblh_semestral.pdb
