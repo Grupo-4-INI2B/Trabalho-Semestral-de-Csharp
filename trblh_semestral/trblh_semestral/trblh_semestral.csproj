@@ -94,11 +94,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FrmCadastro.cs">
+    <Compile Include="FrmCadFor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmCadastro.Designer.cs">
-      <DependentUpon>FrmCadastro.cs</DependentUpon>
+    <Compile Include="FrmCadFor.Designer.cs">
+      <DependentUpon>FrmCadFor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCadProd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCadProd.Designer.cs">
+      <DependentUpon>FrmCadProd.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmInformacoes.cs">
       <SubType>Form</SubType>
@@ -120,6 +126,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmCadFor.resx">
+      <DependentUpon>FrmCadFor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCadProd.resx">
+      <DependentUpon>FrmCadProd.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmPesquisa.resx">
       <DependentUpon>FrmPesquisa.cs</DependentUpon>
     </EmbeddedResource>

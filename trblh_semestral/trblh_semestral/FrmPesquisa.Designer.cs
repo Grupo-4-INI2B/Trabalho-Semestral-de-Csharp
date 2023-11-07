@@ -33,12 +33,12 @@
             this.LblDisponibilidade = new System.Windows.Forms.Label();
             this.LblValidade = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.CblProduto = new System.Windows.Forms.ComboBox();
-            this.CblDisponibilidade = new System.Windows.Forms.ComboBox();
-            this.CblFornecedor = new System.Windows.Forms.ComboBox();
             this.DtValidade = new System.Windows.Forms.DateTimePicker();
             this.BtnFiltro = new System.Windows.Forms.Button();
             this.DtgPesquisa = new System.Windows.Forms.DataGridView();
+            this.TxtProduto = new System.Windows.Forms.TextBox();
+            this.TxtDisponibilidade = new System.Windows.Forms.TextBox();
+            this.TxtFornecedor = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.DtgPesquisa)).BeginInit();
             this.SuspendLayout();
             // 
@@ -54,7 +54,7 @@
             // LblFornecedor
             // 
             this.LblFornecedor.AutoSize = true;
-            this.LblFornecedor.Location = new System.Drawing.Point(44, 152);
+            this.LblFornecedor.Location = new System.Drawing.Point(287, 82);
             this.LblFornecedor.Name = "LblFornecedor";
             this.LblFornecedor.Size = new System.Drawing.Size(131, 16);
             this.LblFornecedor.TabIndex = 1;
@@ -63,7 +63,7 @@
             // LblDisponibilidade
             // 
             this.LblDisponibilidade.AutoSize = true;
-            this.LblDisponibilidade.Location = new System.Drawing.Point(287, 82);
+            this.LblDisponibilidade.Location = new System.Drawing.Point(44, 155);
             this.LblDisponibilidade.Name = "LblDisponibilidade";
             this.LblDisponibilidade.Size = new System.Drawing.Size(102, 16);
             this.LblDisponibilidade.TabIndex = 2;
@@ -86,30 +86,6 @@
             this.label1.Size = new System.Drawing.Size(338, 48);
             this.label1.TabIndex = 5;
             this.label1.Text = "Área de Pesquisa\r\n\r\nSelecione os dados para filtrar o resultado da pesquisa";
-            // 
-            // CblProduto
-            // 
-            this.CblProduto.FormattingEnabled = true;
-            this.CblProduto.Location = new System.Drawing.Point(47, 101);
-            this.CblProduto.Name = "CblProduto";
-            this.CblProduto.Size = new System.Drawing.Size(121, 24);
-            this.CblProduto.TabIndex = 7;
-            // 
-            // CblDisponibilidade
-            // 
-            this.CblDisponibilidade.FormattingEnabled = true;
-            this.CblDisponibilidade.Location = new System.Drawing.Point(290, 101);
-            this.CblDisponibilidade.Name = "CblDisponibilidade";
-            this.CblDisponibilidade.Size = new System.Drawing.Size(121, 24);
-            this.CblDisponibilidade.TabIndex = 8;
-            // 
-            // CblFornecedor
-            // 
-            this.CblFornecedor.FormattingEnabled = true;
-            this.CblFornecedor.Location = new System.Drawing.Point(47, 171);
-            this.CblFornecedor.Name = "CblFornecedor";
-            this.CblFornecedor.Size = new System.Drawing.Size(121, 24);
-            this.CblFornecedor.TabIndex = 9;
             // 
             // DtValidade
             // 
@@ -138,24 +114,46 @@
             this.DtgPesquisa.Size = new System.Drawing.Size(652, 150);
             this.DtgPesquisa.TabIndex = 12;
             // 
+            // TxtProduto
+            // 
+            this.TxtProduto.Location = new System.Drawing.Point(47, 101);
+            this.TxtProduto.Name = "TxtProduto";
+            this.TxtProduto.Size = new System.Drawing.Size(100, 22);
+            this.TxtProduto.TabIndex = 13;
+            // 
+            // TxtDisponibilidade
+            // 
+            this.TxtDisponibilidade.Location = new System.Drawing.Point(47, 174);
+            this.TxtDisponibilidade.Name = "TxtDisponibilidade";
+            this.TxtDisponibilidade.Size = new System.Drawing.Size(100, 22);
+            this.TxtDisponibilidade.TabIndex = 14;
+            // 
+            // TxtFornecedor
+            // 
+            this.TxtFornecedor.Location = new System.Drawing.Point(290, 101);
+            this.TxtFornecedor.Name = "TxtFornecedor";
+            this.TxtFornecedor.Size = new System.Drawing.Size(100, 22);
+            this.TxtFornecedor.TabIndex = 15;
+            // 
             // FrmPesquisa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.TxtFornecedor);
+            this.Controls.Add(this.TxtDisponibilidade);
+            this.Controls.Add(this.TxtProduto);
             this.Controls.Add(this.DtgPesquisa);
             this.Controls.Add(this.BtnFiltro);
             this.Controls.Add(this.DtValidade);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.CblProduto);
-            this.Controls.Add(this.CblFornecedor);
-            this.Controls.Add(this.CblDisponibilidade);
             this.Controls.Add(this.LblProduto);
             this.Controls.Add(this.LblValidade);
             this.Controls.Add(this.LblDisponibilidade);
             this.Controls.Add(this.LblFornecedor);
             this.Name = "FrmPesquisa";
-            this.Text = "FrmPesquisa";
+            this.Text = "Pesquisa de produtos";
+            this.Load += new System.EventHandler(this.FrmPesquisa_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DtgPesquisa)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -171,9 +169,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button BtnFiltro;
         private System.Windows.Forms.DateTimePicker DtValidade;
-        private System.Windows.Forms.ComboBox CblProduto;
-        private System.Windows.Forms.ComboBox CblFornecedor;
-        private System.Windows.Forms.ComboBox CblDisponibilidade;
         private System.Windows.Forms.DataGridView DtgPesquisa;
+        private System.Windows.Forms.TextBox TxtProduto;
+        private System.Windows.Forms.TextBox TxtDisponibilidade;
+        private System.Windows.Forms.TextBox TxtFornecedor;
     }
 }

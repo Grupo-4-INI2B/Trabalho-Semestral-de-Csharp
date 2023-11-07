@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace trblh_semestral
 {
-    public partial class FrmCadastro : Form
+    public partial class FrmCadFor : Form
     {
-        public FrmCadastro()
+        public FrmCadFor()
         {
             InitializeComponent();
+        }
+
+        private void FrmCadFor_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
