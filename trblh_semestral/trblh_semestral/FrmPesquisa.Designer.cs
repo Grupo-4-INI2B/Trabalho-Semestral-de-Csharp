@@ -45,60 +45,73 @@
             // LblProduto
             // 
             this.LblProduto.AutoSize = true;
-            this.LblProduto.Location = new System.Drawing.Point(44, 82);
+            this.LblProduto.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.LblProduto.Location = new System.Drawing.Point(33, 67);
+            this.LblProduto.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblProduto.Name = "LblProduto";
-            this.LblProduto.Size = new System.Drawing.Size(112, 16);
+            this.LblProduto.Size = new System.Drawing.Size(89, 13);
             this.LblProduto.TabIndex = 0;
             this.LblProduto.Text = "Nome do produto";
             // 
             // LblFornecedor
             // 
             this.LblFornecedor.AutoSize = true;
-            this.LblFornecedor.Location = new System.Drawing.Point(287, 82);
+            this.LblFornecedor.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.LblFornecedor.Location = new System.Drawing.Point(206, 67);
+            this.LblFornecedor.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblFornecedor.Name = "LblFornecedor";
-            this.LblFornecedor.Size = new System.Drawing.Size(131, 16);
+            this.LblFornecedor.Size = new System.Drawing.Size(104, 13);
             this.LblFornecedor.TabIndex = 1;
             this.LblFornecedor.Text = "Nome do fornecedor";
             // 
             // LblDisponibilidade
             // 
             this.LblDisponibilidade.AutoSize = true;
-            this.LblDisponibilidade.Location = new System.Drawing.Point(44, 155);
+            this.LblDisponibilidade.ForeColor = System.Drawing.Color.Black;
+            this.LblDisponibilidade.Location = new System.Drawing.Point(372, 67);
+            this.LblDisponibilidade.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblDisponibilidade.Name = "LblDisponibilidade";
-            this.LblDisponibilidade.Size = new System.Drawing.Size(102, 16);
+            this.LblDisponibilidade.Size = new System.Drawing.Size(78, 13);
             this.LblDisponibilidade.TabIndex = 2;
             this.LblDisponibilidade.Text = "Disponibilidade";
             // 
             // LblValidade
             // 
             this.LblValidade.AutoSize = true;
-            this.LblValidade.Location = new System.Drawing.Point(287, 152);
+            this.LblValidade.Location = new System.Drawing.Point(215, 124);
+            this.LblValidade.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblValidade.Name = "LblValidade";
-            this.LblValidade.Size = new System.Drawing.Size(111, 16);
+            this.LblValidade.Size = new System.Drawing.Size(88, 13);
             this.LblValidade.TabIndex = 3;
             this.LblValidade.Text = "Data de validade";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(41, 9);
+            this.label1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label1.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(32, 9);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(338, 48);
+            this.label1.Size = new System.Drawing.Size(456, 34);
             this.label1.TabIndex = 5;
-            this.label1.Text = "Área de Pesquisa\r\n\r\nSelecione os dados para filtrar o resultado da pesquisa";
+            this.label1.Text = "Área de Pesquisa\r\nSelecione os dados para filtrar o resultado da pesquisa ";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // DtValidade
             // 
-            this.DtValidade.Location = new System.Drawing.Point(290, 172);
+            this.DtValidade.Location = new System.Drawing.Point(218, 140);
+            this.DtValidade.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.DtValidade.Name = "DtValidade";
-            this.DtValidade.Size = new System.Drawing.Size(260, 22);
+            this.DtValidade.Size = new System.Drawing.Size(196, 20);
             this.DtValidade.TabIndex = 10;
             // 
             // BtnFiltro
             // 
-            this.BtnFiltro.Location = new System.Drawing.Point(594, 153);
+            this.BtnFiltro.Location = new System.Drawing.Point(446, 124);
+            this.BtnFiltro.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnFiltro.Name = "BtnFiltro";
-            this.BtnFiltro.Size = new System.Drawing.Size(105, 42);
+            this.BtnFiltro.Size = new System.Drawing.Size(79, 34);
             this.BtnFiltro.TabIndex = 11;
             this.BtnFiltro.Text = "Filtrar";
             this.BtnFiltro.UseVisualStyleBackColor = true;
@@ -107,39 +120,44 @@
             // DtgPesquisa
             // 
             this.DtgPesquisa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DtgPesquisa.Location = new System.Drawing.Point(47, 258);
+            this.DtgPesquisa.Location = new System.Drawing.Point(35, 210);
+            this.DtgPesquisa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.DtgPesquisa.Name = "DtgPesquisa";
             this.DtgPesquisa.RowHeadersWidth = 51;
             this.DtgPesquisa.RowTemplate.Height = 24;
-            this.DtgPesquisa.Size = new System.Drawing.Size(652, 150);
+            this.DtgPesquisa.Size = new System.Drawing.Size(489, 122);
             this.DtgPesquisa.TabIndex = 12;
             // 
             // TxtProduto
             // 
-            this.TxtProduto.Location = new System.Drawing.Point(47, 101);
+            this.TxtProduto.Location = new System.Drawing.Point(34, 82);
+            this.TxtProduto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.TxtProduto.Name = "TxtProduto";
-            this.TxtProduto.Size = new System.Drawing.Size(100, 22);
+            this.TxtProduto.Size = new System.Drawing.Size(116, 20);
             this.TxtProduto.TabIndex = 13;
             // 
             // TxtDisponibilidade
             // 
-            this.TxtDisponibilidade.Location = new System.Drawing.Point(47, 174);
+            this.TxtDisponibilidade.Location = new System.Drawing.Point(374, 82);
+            this.TxtDisponibilidade.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.TxtDisponibilidade.Name = "TxtDisponibilidade";
-            this.TxtDisponibilidade.Size = new System.Drawing.Size(100, 22);
+            this.TxtDisponibilidade.Size = new System.Drawing.Size(96, 20);
             this.TxtDisponibilidade.TabIndex = 14;
             // 
             // TxtFornecedor
             // 
-            this.TxtFornecedor.Location = new System.Drawing.Point(290, 101);
+            this.TxtFornecedor.Location = new System.Drawing.Point(209, 82);
+            this.TxtFornecedor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.TxtFornecedor.Name = "TxtFornecedor";
-            this.TxtFornecedor.Size = new System.Drawing.Size(100, 22);
+            this.TxtFornecedor.Size = new System.Drawing.Size(111, 20);
             this.TxtFornecedor.TabIndex = 15;
             // 
             // FrmPesquisa
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.SkyBlue;
+            this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.TxtFornecedor);
             this.Controls.Add(this.TxtDisponibilidade);
             this.Controls.Add(this.TxtProduto);
@@ -151,6 +169,7 @@
             this.Controls.Add(this.LblValidade);
             this.Controls.Add(this.LblDisponibilidade);
             this.Controls.Add(this.LblFornecedor);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FrmPesquisa";
             this.Text = "Pesquisa de produtos";
             this.Load += new System.EventHandler(this.FrmPesquisa_Load);
