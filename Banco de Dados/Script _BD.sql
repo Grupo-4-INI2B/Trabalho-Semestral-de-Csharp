@@ -16,7 +16,6 @@ CREATE TABLE Produto (
 CREATE TABLE Fornecedor (
     idFornecedor SERIAL NOT NULL PRIMARY KEY,
     nomeFornecedor VARCHAR(45) NOT NULL,
-    cpf VARCHAR(14) NOT NULL,
     telefone VARCHAR(45) NOT NULL,
     email VARCHAR(45) NOT NULL,
     endereco VARCHAR(45) NOT NULL
