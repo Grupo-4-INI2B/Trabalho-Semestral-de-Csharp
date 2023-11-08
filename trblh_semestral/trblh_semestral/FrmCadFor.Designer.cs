@@ -72,7 +72,7 @@
             // 
             this.LblTelefone.AutoSize = true;
             this.LblTelefone.Font = new System.Drawing.Font("Cascadia Mono", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblTelefone.Location = new System.Drawing.Point(122, 128);
+            this.LblTelefone.Location = new System.Drawing.Point(405, 85);
             this.LblTelefone.Name = "LblTelefone";
             this.LblTelefone.Size = new System.Drawing.Size(100, 22);
             this.LblTelefone.TabIndex = 3;
@@ -82,7 +82,7 @@
             // 
             this.LblEmail.AutoSize = true;
             this.LblEmail.Font = new System.Drawing.Font("Cascadia Mono", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblEmail.Location = new System.Drawing.Point(405, 85);
+            this.LblEmail.Location = new System.Drawing.Point(122, 124);
             this.LblEmail.Name = "LblEmail";
             this.LblEmail.Size = new System.Drawing.Size(80, 22);
             this.LblEmail.TabIndex = 4;
@@ -108,16 +108,16 @@
             // 
             // TxtEmail
             // 
-            this.TxtEmail.Location = new System.Drawing.Point(490, 85);
+            this.TxtEmail.Location = new System.Drawing.Point(207, 124);
             this.TxtEmail.Name = "TxtEmail";
-            this.TxtEmail.Size = new System.Drawing.Size(198, 22);
+            this.TxtEmail.Size = new System.Drawing.Size(178, 22);
             this.TxtEmail.TabIndex = 7;
             // 
             // TxtTelefone
             // 
-            this.TxtTelefone.Location = new System.Drawing.Point(228, 126);
+            this.TxtTelefone.Location = new System.Drawing.Point(511, 83);
             this.TxtTelefone.Name = "TxtTelefone";
-            this.TxtTelefone.Size = new System.Drawing.Size(157, 22);
+            this.TxtTelefone.Size = new System.Drawing.Size(177, 22);
             this.TxtTelefone.TabIndex = 9;
             // 
             // TxtEndereco
@@ -135,6 +135,7 @@
             this.BtnBusca.TabIndex = 32;
             this.BtnBusca.Text = "Busca";
             this.BtnBusca.UseVisualStyleBackColor = true;
+            this.BtnBusca.Click += new System.EventHandler(this.BtnBusca_Click);
             // 
             // TxtBusca
             // 
@@ -151,6 +152,7 @@
             this.BtnExcluir.TabIndex = 30;
             this.BtnExcluir.Text = "Excluir";
             this.BtnExcluir.UseVisualStyleBackColor = true;
+            this.BtnExcluir.Click += new System.EventHandler(this.BtnExcluir_Click);
             // 
             // BtnEditar
             // 
@@ -160,6 +162,7 @@
             this.BtnEditar.TabIndex = 29;
             this.BtnEditar.Text = "Editar";
             this.BtnEditar.UseVisualStyleBackColor = true;
+            this.BtnEditar.Click += new System.EventHandler(this.BtnEditar_Click);
             // 
             // BtnCancelar
             // 
@@ -169,6 +172,7 @@
             this.BtnCancelar.TabIndex = 28;
             this.BtnCancelar.Text = "Cancelar";
             this.BtnCancelar.UseVisualStyleBackColor = true;
+            this.BtnCancelar.Click += new System.EventHandler(this.BtnCancelar_Click);
             // 
             // BtnCadastro
             // 
@@ -189,6 +193,7 @@
             this.DtgFornecedor.RowTemplate.Height = 24;
             this.DtgFornecedor.Size = new System.Drawing.Size(708, 150);
             this.DtgFornecedor.TabIndex = 26;
+            this.DtgFornecedor.RowHeaderMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.DtgFornecedor_RowHeaderMouseDoubleClick);
             // 
             // FrmCadFor
             // 

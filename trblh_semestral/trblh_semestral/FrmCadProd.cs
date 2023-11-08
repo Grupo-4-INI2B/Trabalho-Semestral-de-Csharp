@@ -131,11 +131,13 @@ namespace trblh_semestral
                     var yv = DtValidade.Value.Year;
                     string dataValidade = yv + "/" + mv + "/" + dv;
 
+                    int idFornSelecionado = (int)CblFornecedor.SelectedValue;
+                    //LblAleatorio.Text = $"{idFornSelecionado}";
                     var query = $"INSERT INTO Produto (nomeProduto,categoria, descricao, data," +
                         $"validade, disponivel, qtnd, preco, fornecedor) VALUES " +
                         $"('{TxtProduto.Text}','{TxtCategoria.Text}','{TxtDescricao.Text}'," +
                         $"'{dataCadastro}','{dataValidade}',{Disponivel()},{NumQuantidade.Value}," +
-                        $"{NumPreco.Value}, {(int)CblFornecedor.SelectedValue} );";
+                        $"{NumPreco.Value}, {idFornSelecionado} );";
                                 
 
                     conexao.Query(sql: query); //Executa a inserção de dados
@@ -170,6 +172,12 @@ namespace trblh_semestral
 
                 //Lowlight();
             }
+        }
+
+        private void BtnCancelar_Click(object sender, EventArgs e)
+        {
+            LimpaCampos();
+            CarregarDados(null);
         }
     }
 }

@@ -113,7 +113,7 @@
             // 
             this.BtnCadProd.BackColor = System.Drawing.Color.AliceBlue;
             this.BtnCadProd.Font = new System.Drawing.Font("Cascadia Code", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnCadProd.Location = new System.Drawing.Point(346, 330);
+            this.BtnCadProd.Location = new System.Drawing.Point(344, 330);
             this.BtnCadProd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnCadProd.Name = "BtnCadProd";
             this.BtnCadProd.Size = new System.Drawing.Size(140, 49);

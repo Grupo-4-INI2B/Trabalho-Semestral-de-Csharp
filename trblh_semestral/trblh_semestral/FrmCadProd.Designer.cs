@@ -54,6 +54,7 @@
             this.BtnBusca = new System.Windows.Forms.Button();
             this.DtgProduto = new System.Windows.Forms.DataGridView();
             this.CblFornecedor = new System.Windows.Forms.ComboBox();
+            this.LblAleatorio = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.NumQuantidade)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumPreco)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DtgProduto)).BeginInit();
@@ -242,6 +243,7 @@
             this.BtnCancelar.TabIndex = 21;
             this.BtnCancelar.Text = "Cancelar";
             this.BtnCancelar.UseVisualStyleBackColor = true;
+            this.BtnCancelar.Click += new System.EventHandler(this.BtnCancelar_Click);
             // 
             // BtnEditar
             // 
@@ -295,11 +297,22 @@
             this.CblFornecedor.Size = new System.Drawing.Size(100, 24);
             this.CblFornecedor.TabIndex = 26;
             // 
+            // LblAleatorio
+            // 
+            this.LblAleatorio.AutoSize = true;
+            this.LblAleatorio.Location = new System.Drawing.Point(381, 151);
+            this.LblAleatorio.Name = "LblAleatorio";
+            this.LblAleatorio.Size = new System.Drawing.Size(61, 16);
+            this.LblAleatorio.TabIndex = 27;
+            this.LblAleatorio.Text = "Aleatorio";
+            this.LblAleatorio.Visible = false;
+            // 
             // FrmCadProd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.LblAleatorio);
             this.Controls.Add(this.CblFornecedor);
             this.Controls.Add(this.BtnBusca);
             this.Controls.Add(this.TxtBusca);
@@ -364,5 +377,6 @@
         private System.Windows.Forms.Button BtnBusca;
         private System.Windows.Forms.DataGridView DtgProduto;
         private System.Windows.Forms.ComboBox CblFornecedor;
+        private System.Windows.Forms.Label LblAleatorio;
     }
 }

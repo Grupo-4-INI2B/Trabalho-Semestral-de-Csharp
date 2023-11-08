@@ -15,6 +15,7 @@ namespace trblh_semestral
     public partial class FrmCadFor : Form
     {
         NpgsqlConnection conexao;
+        int idFornecedor = 0;
         public FrmCadFor()
         {
             InitializeComponent();
@@ -47,7 +48,6 @@ namespace trblh_semestral
                         DtgFornecedor.DataSource = dt;
                     }
                 }
-
                 conexao.Close();
             }
             catch (NpgsqlException ex)
@@ -89,8 +89,7 @@ namespace trblh_semestral
 
                     conexao.Query(sql: query); //Executa a inserção de dados
                     MessageBox.Show("Produto cadastrado com sucesso!");
-                    LimpaCampos();
-                    CarregarDados(null); //Carrega lista atualizada com o novo registro
+                    Recarrega();
                 }
                 catch (NpgsqlException ex)
                 {
@@ -120,6 +119,113 @@ namespace trblh_semestral
                 //Lowlight();
             }
 
+        }
+        private void Recarrega()
+        {
+            LimpaCampos();
+            CarregarDados(null);
+        }
+        private void BtnCancelar_Click(object sender, EventArgs e)
+        {
+            Recarrega();
+        }
+
+        private void DtgFornecedor_RowHeaderMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            try
+            {
+                this.idFornecedor = (int)DtgFornecedor.SelectedRows[0].Cells[0].Value;
+
+                var nomeFornecedor = DtgFornecedor.SelectedRows[0].Cells[1].Value;
+                var telefoneFornecedor = DtgFornecedor.SelectedRows[0].Cells[2].Value;
+                var emailFornecedor = DtgFornecedor.SelectedRows[0].Cells[3].Value;
+                var enderecoFornecedor = DtgFornecedor.SelectedRows[0].Cells[4].Value;
+
+                TxtFornecedor.Text = nomeFornecedor.ToString();
+                TxtTelefone.Text = telefoneFornecedor.ToString();
+                TxtEmail.Text = emailFornecedor.ToString();
+                TxtEndereco.Text = enderecoFornecedor.ToString();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro: " + ex.Message);
+                // TslPrincipal.Text = ex.Message;
+            }
+        }
+
+        private void BtnEditar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                //Fornecedor fornecedor = new Fornecedor();
+                var update = $"UPDATE Fornecedor SET nomeFornecedor = '{TxtFornecedor.Text}'," +
+                    $"telefone = '{TxtTelefone.Text}'," +
+                    $"email = '{TxtEmail.Text}'," +
+                    $"endereco = '{TxtEndereco.Text}'" +
+                    $"WHERE idFornecedor = {this.idFornecedor};";
+
+                conexao.Query(sql: update);
+
+                MessageBox.Show("Dados atualizados com sucesso!!");
+
+                Recarrega();
+            }
+            catch (NpgsqlException ex)
+            {
+                MessageBox.Show("Erro: " + ex.Message);
+                // TslPrincipal.Text = ex.Message;
+            }
+        }
+
+        private void BtnExcluir_Click(object sender, EventArgs e)
+        {
+            DialogResult resultado = MessageBox.Show("Deseja excluir este registro?", "Atenção!!!", MessageBoxButtons.YesNo);
+            if (resultado == DialogResult.Yes)
+            {
+                try
+                {
+                    var delete = $"DELETE FROM Fornecedor WHERE idFornecedor={this.idFornecedor}";
+                    conexao.Query(sql: delete);
+
+                    MessageBox.Show("Fornecedor excluído com sucesso!!");
+
+                    Recarrega();
+                }
+                catch (NpgsqlException ex)
+                {
+                    MessageBox.Show("Erro: " + ex.Message);
+                    // TslPrincipal.Text = ex.Message;
+                }
+            }
+            else
+            {
+                Recarrega();
+            }
+        }
+
+        private void BtnBusca_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(TxtBusca.Text))
+            {
+                try
+                {
+                        string query = $"SELECT f.idFornecedor AS idFornecedor," +
+                        $"f.nomeFornecedor," +
+                        $" f.telefone," +
+                        $" f.email," +
+                        $" f.endereco " +
+                        $"FROM Fornecedor AS f WHERE f.nomeFornecedor LIKE '%{TxtBusca.Text}%' ;";
+                        CarregarDados(query);
+                }
+                catch (NpgsqlException ex)
+                {
+                    MessageBox.Show("Erro: " + ex.Message);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Preencha o campo!");
+            }
         }
     }
 }
