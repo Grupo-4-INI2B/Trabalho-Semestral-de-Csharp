@@ -136,7 +136,7 @@ namespace trblh_semestral
                         $"('{TxtProduto.Text}','{TxtCategoria.Text}','{TxtDescricao.Text}'," +
                         $"'{dataCadastro}','{dataValidade}',{Disponivel()},{NumQuantidade.Value}," +
                         $"{NumPreco.Value}, {(int)CblFornecedor.SelectedValue} );";
-
+                                
 
                     conexao.Query(sql: query); //Executa a inserção de dados
                     MessageBox.Show("Produto cadastrado com sucesso!");
