@@ -29,16 +29,22 @@
         private void InitializeComponent()
         {
             this.LblAreaCad = new System.Windows.Forms.Label();
-            this.LblNome = new System.Windows.Forms.Label();
-            this.LblCpf = new System.Windows.Forms.Label();
+            this.LblFornecedor = new System.Windows.Forms.Label();
             this.LblTelefone = new System.Windows.Forms.Label();
             this.LblEmail = new System.Windows.Forms.Label();
             this.LblEndereco = new System.Windows.Forms.Label();
-            this.TxtNome = new System.Windows.Forms.TextBox();
+            this.TxtFornecedor = new System.Windows.Forms.TextBox();
             this.TxtEmail = new System.Windows.Forms.TextBox();
-            this.TxtCpf = new System.Windows.Forms.TextBox();
             this.TxtTelefone = new System.Windows.Forms.TextBox();
             this.TxtEndereco = new System.Windows.Forms.TextBox();
+            this.BtnBusca = new System.Windows.Forms.Button();
+            this.TxtBusca = new System.Windows.Forms.TextBox();
+            this.BtnExcluir = new System.Windows.Forms.Button();
+            this.BtnEditar = new System.Windows.Forms.Button();
+            this.BtnCancelar = new System.Windows.Forms.Button();
+            this.BtnCadastro = new System.Windows.Forms.Button();
+            this.DtgFornecedor = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.DtgFornecedor)).BeginInit();
             this.SuspendLayout();
             // 
             // LblAreaCad
@@ -52,31 +58,21 @@
             this.LblAreaCad.TabIndex = 0;
             this.LblAreaCad.Text = "Área de Cadastro de Fornecedores:";
             // 
-            // LblNome
+            // LblFornecedor
             // 
-            this.LblNome.AutoSize = true;
-            this.LblNome.Font = new System.Drawing.Font("Cascadia Mono", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblNome.Location = new System.Drawing.Point(122, 85);
-            this.LblNome.Name = "LblNome";
-            this.LblNome.Size = new System.Drawing.Size(60, 22);
-            this.LblNome.TabIndex = 1;
-            this.LblNome.Text = "Nome:";
-            // 
-            // LblCpf
-            // 
-            this.LblCpf.AutoSize = true;
-            this.LblCpf.Font = new System.Drawing.Font("Cascadia Mono", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblCpf.Location = new System.Drawing.Point(132, 129);
-            this.LblCpf.Name = "LblCpf";
-            this.LblCpf.Size = new System.Drawing.Size(50, 22);
-            this.LblCpf.TabIndex = 2;
-            this.LblCpf.Text = "CPF:";
+            this.LblFornecedor.AutoSize = true;
+            this.LblFornecedor.Font = new System.Drawing.Font("Cascadia Mono", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblFornecedor.Location = new System.Drawing.Point(122, 85);
+            this.LblFornecedor.Name = "LblFornecedor";
+            this.LblFornecedor.Size = new System.Drawing.Size(60, 22);
+            this.LblFornecedor.TabIndex = 1;
+            this.LblFornecedor.Text = "Nome:";
             // 
             // LblTelefone
             // 
             this.LblTelefone.AutoSize = true;
             this.LblTelefone.Font = new System.Drawing.Font("Cascadia Mono", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblTelefone.Location = new System.Drawing.Point(405, 129);
+            this.LblTelefone.Location = new System.Drawing.Point(122, 128);
             this.LblTelefone.Name = "LblTelefone";
             this.LblTelefone.Size = new System.Drawing.Size(100, 22);
             this.LblTelefone.TabIndex = 3;
@@ -97,46 +93,102 @@
             // 
             this.LblEndereco.AutoSize = true;
             this.LblEndereco.Font = new System.Drawing.Font("Cascadia Mono", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblEndereco.Location = new System.Drawing.Point(269, 172);
+            this.LblEndereco.Location = new System.Drawing.Point(405, 124);
             this.LblEndereco.Name = "LblEndereco";
             this.LblEndereco.Size = new System.Drawing.Size(100, 22);
             this.LblEndereco.TabIndex = 5;
             this.LblEndereco.Text = "Endereço:";
             // 
-            // TxtNome
+            // TxtFornecedor
             // 
-            this.TxtNome.Location = new System.Drawing.Point(188, 85);
-            this.TxtNome.Name = "TxtNome";
-            this.TxtNome.Size = new System.Drawing.Size(167, 22);
-            this.TxtNome.TabIndex = 6;
+            this.TxtFornecedor.Location = new System.Drawing.Point(188, 85);
+            this.TxtFornecedor.Name = "TxtFornecedor";
+            this.TxtFornecedor.Size = new System.Drawing.Size(197, 22);
+            this.TxtFornecedor.TabIndex = 6;
             // 
             // TxtEmail
             // 
             this.TxtEmail.Location = new System.Drawing.Point(490, 85);
             this.TxtEmail.Name = "TxtEmail";
-            this.TxtEmail.Size = new System.Drawing.Size(167, 22);
+            this.TxtEmail.Size = new System.Drawing.Size(198, 22);
             this.TxtEmail.TabIndex = 7;
-            // 
-            // TxtCpf
-            // 
-            this.TxtCpf.Location = new System.Drawing.Point(188, 129);
-            this.TxtCpf.Name = "TxtCpf";
-            this.TxtCpf.Size = new System.Drawing.Size(167, 22);
-            this.TxtCpf.TabIndex = 8;
             // 
             // TxtTelefone
             // 
-            this.TxtTelefone.Location = new System.Drawing.Point(511, 127);
+            this.TxtTelefone.Location = new System.Drawing.Point(228, 126);
             this.TxtTelefone.Name = "TxtTelefone";
-            this.TxtTelefone.Size = new System.Drawing.Size(146, 22);
+            this.TxtTelefone.Size = new System.Drawing.Size(157, 22);
             this.TxtTelefone.TabIndex = 9;
             // 
             // TxtEndereco
             // 
-            this.TxtEndereco.Location = new System.Drawing.Point(375, 172);
+            this.TxtEndereco.Location = new System.Drawing.Point(511, 124);
             this.TxtEndereco.Name = "TxtEndereco";
-            this.TxtEndereco.Size = new System.Drawing.Size(188, 22);
+            this.TxtEndereco.Size = new System.Drawing.Size(177, 22);
             this.TxtEndereco.TabIndex = 10;
+            // 
+            // BtnBusca
+            // 
+            this.BtnBusca.Location = new System.Drawing.Point(221, 258);
+            this.BtnBusca.Name = "BtnBusca";
+            this.BtnBusca.Size = new System.Drawing.Size(75, 23);
+            this.BtnBusca.TabIndex = 32;
+            this.BtnBusca.Text = "Busca";
+            this.BtnBusca.UseVisualStyleBackColor = true;
+            // 
+            // TxtBusca
+            // 
+            this.TxtBusca.Location = new System.Drawing.Point(50, 260);
+            this.TxtBusca.Name = "TxtBusca";
+            this.TxtBusca.Size = new System.Drawing.Size(165, 22);
+            this.TxtBusca.TabIndex = 31;
+            // 
+            // BtnExcluir
+            // 
+            this.BtnExcluir.Location = new System.Drawing.Point(443, 258);
+            this.BtnExcluir.Name = "BtnExcluir";
+            this.BtnExcluir.Size = new System.Drawing.Size(75, 23);
+            this.BtnExcluir.TabIndex = 30;
+            this.BtnExcluir.Text = "Excluir";
+            this.BtnExcluir.UseVisualStyleBackColor = true;
+            // 
+            // BtnEditar
+            // 
+            this.BtnEditar.Location = new System.Drawing.Point(351, 258);
+            this.BtnEditar.Name = "BtnEditar";
+            this.BtnEditar.Size = new System.Drawing.Size(75, 23);
+            this.BtnEditar.TabIndex = 29;
+            this.BtnEditar.Text = "Editar";
+            this.BtnEditar.UseVisualStyleBackColor = true;
+            // 
+            // BtnCancelar
+            // 
+            this.BtnCancelar.Location = new System.Drawing.Point(443, 177);
+            this.BtnCancelar.Name = "BtnCancelar";
+            this.BtnCancelar.Size = new System.Drawing.Size(75, 23);
+            this.BtnCancelar.TabIndex = 28;
+            this.BtnCancelar.Text = "Cancelar";
+            this.BtnCancelar.UseVisualStyleBackColor = true;
+            // 
+            // BtnCadastro
+            // 
+            this.BtnCadastro.Location = new System.Drawing.Point(255, 177);
+            this.BtnCadastro.Name = "BtnCadastro";
+            this.BtnCadastro.Size = new System.Drawing.Size(97, 23);
+            this.BtnCadastro.TabIndex = 27;
+            this.BtnCadastro.Text = "Cadastrar";
+            this.BtnCadastro.UseVisualStyleBackColor = true;
+            this.BtnCadastro.Click += new System.EventHandler(this.BtnCadastro_Click);
+            // 
+            // DtgFornecedor
+            // 
+            this.DtgFornecedor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DtgFornecedor.Location = new System.Drawing.Point(50, 288);
+            this.DtgFornecedor.Name = "DtgFornecedor";
+            this.DtgFornecedor.RowHeadersWidth = 51;
+            this.DtgFornecedor.RowTemplate.Height = 24;
+            this.DtgFornecedor.Size = new System.Drawing.Size(708, 150);
+            this.DtgFornecedor.TabIndex = 26;
             // 
             // FrmCadFor
             // 
@@ -144,20 +196,26 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SkyBlue;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.BtnBusca);
+            this.Controls.Add(this.TxtBusca);
+            this.Controls.Add(this.BtnExcluir);
+            this.Controls.Add(this.BtnEditar);
+            this.Controls.Add(this.BtnCancelar);
+            this.Controls.Add(this.BtnCadastro);
+            this.Controls.Add(this.DtgFornecedor);
             this.Controls.Add(this.TxtEndereco);
             this.Controls.Add(this.TxtTelefone);
-            this.Controls.Add(this.TxtCpf);
             this.Controls.Add(this.TxtEmail);
-            this.Controls.Add(this.TxtNome);
+            this.Controls.Add(this.TxtFornecedor);
             this.Controls.Add(this.LblEndereco);
             this.Controls.Add(this.LblEmail);
             this.Controls.Add(this.LblTelefone);
-            this.Controls.Add(this.LblCpf);
-            this.Controls.Add(this.LblNome);
+            this.Controls.Add(this.LblFornecedor);
             this.Controls.Add(this.LblAreaCad);
             this.Name = "FrmCadFor";
             this.Text = "Cadastro Fornecedores";
             this.Load += new System.EventHandler(this.FrmCadFor_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.DtgFornecedor)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -166,15 +224,20 @@
         #endregion
 
         private System.Windows.Forms.Label LblAreaCad;
-        private System.Windows.Forms.Label LblNome;
-        private System.Windows.Forms.Label LblCpf;
+        private System.Windows.Forms.Label LblFornecedor;
         private System.Windows.Forms.Label LblTelefone;
         private System.Windows.Forms.Label LblEmail;
         private System.Windows.Forms.Label LblEndereco;
-        private System.Windows.Forms.TextBox TxtNome;
+        private System.Windows.Forms.TextBox TxtFornecedor;
         private System.Windows.Forms.TextBox TxtEmail;
-        private System.Windows.Forms.TextBox TxtCpf;
         private System.Windows.Forms.TextBox TxtTelefone;
         private System.Windows.Forms.TextBox TxtEndereco;
+        private System.Windows.Forms.Button BtnBusca;
+        private System.Windows.Forms.TextBox TxtBusca;
+        private System.Windows.Forms.Button BtnExcluir;
+        private System.Windows.Forms.Button BtnEditar;
+        private System.Windows.Forms.Button BtnCancelar;
+        private System.Windows.Forms.Button BtnCadastro;
+        private System.Windows.Forms.DataGridView DtgFornecedor;
     }
 }

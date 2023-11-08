@@ -110,7 +110,7 @@ namespace trblh_semestral
                     var query = $"INSERT INTO Produto (nomeProduto,categoria, descricao, data," +
                         $"validade, disponivel, qtnd, preco, fornecedor) VALUES " +
                         $"('{TxtProduto.Text}','{TxtCategoria.Text}','{TxtDescricao.Text}'," +
-                        $"'{dataCadastro}','{dataValidade}','{Disponivel()}',{NumQuantidade.Value}," +
+                        $"'{dataCadastro}','{dataValidade}',{Disponivel()},{NumQuantidade.Value}," +
                         $"{NumPreco.Value}, '{TxtFornecedor.Text}');";
 
 
