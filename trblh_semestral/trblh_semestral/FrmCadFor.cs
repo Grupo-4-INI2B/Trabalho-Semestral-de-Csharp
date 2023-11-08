@@ -21,5 +21,10 @@ namespace trblh_semestral
         {
 
         }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
