@@ -8,9 +8,9 @@ CREATE TABLE Produto (
     disponivel BOOLEAN NOT NULL,
     qtnd INT NOT NULL, /*quantidade*/
     preco DECIMAL(10,2) NOT NULL,
-    fornecedor SERIAL NOT NULL ON DELETE CASCADE,
+    fornecedor SERIAL NOT NULL,
 
-    FOREIGN KEY (fornecedor) REFERENCES Fornecedor(idFornecedor)
+    FOREIGN KEY (fornecedor) REFERENCES Fornecedor(idFornecedor) ON DELETE CASCADE
 );
 
 CREATE TABLE Fornecedor (
