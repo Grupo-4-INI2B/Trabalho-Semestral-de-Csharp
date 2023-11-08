@@ -28,6 +28,7 @@ namespace trblh_semestral
             );
 
             CarregarDados(null);
+            PreencherCblFornecedores();
         }
         private void CarregarDados(string comando)
         {
@@ -56,6 +57,27 @@ namespace trblh_semestral
             }
         }
 
+        private List<Fornecedor> ObterFornecedores()
+        {
+            string connectionString = "Server=localhost;Port=5432;User ID=postgres;Password=postgres;Database=ProjetoSemestralCsharp;Pooling=true;";
+
+            using (NpgsqlConnection conexao = new NpgsqlConnection(connectionString))
+            {
+                conexao.Open();
+
+                string query = "SELECT idFornecedor, nomeFornecedor FROM Fornecedor";
+                return conexao.Query<Fornecedor>(query).ToList();
+            }
+        }
+        private void PreencherCblFornecedores()
+        {
+            List<Fornecedor> fornecedores = ObterFornecedores();
+            CblFornecedor.DataSource = fornecedores;
+            CblFornecedor.DisplayMember = "nomeFornecedor";
+            CblFornecedor.ValueMember = "idFornecedor";
+        }
+
+
         private bool Disponivel()
         {
             if(ChkDisponivel.Checked)
@@ -77,7 +99,7 @@ namespace trblh_semestral
             ChkDisponivel.Checked=false;
             NumQuantidade.Value = 0;
             NumPreco.Value = 0.00M;
-            TxtFornecedor.ResetText();
+            CblFornecedor.ResetText();
             DtCadastro.Value = DateTime.MaxValue;
             DtValidade.Value= DateTime.MaxValue;
         }
@@ -111,7 +133,7 @@ namespace trblh_semestral
                         $"validade, disponivel, qtnd, preco, fornecedor) VALUES " +
                         $"('{TxtProduto.Text}','{TxtCategoria.Text}','{TxtDescricao.Text}'," +
                         $"'{dataCadastro}','{dataValidade}',{Disponivel()},{NumQuantidade.Value}," +
-                        $"{NumPreco.Value}, '{TxtFornecedor.Text}');";
+                        $"{NumPreco.Value}, '{(int)CblFornecedor.SelectedValue}');";
 
 
                     conexao.Query(sql: query); //Executa a inserção de dados
@@ -141,7 +163,7 @@ namespace trblh_semestral
                 /*if (!Disponivel())
                     LblDisponivel.Font = new Font(this.Font, FontStyle.Bold);*/
 
-                if (string.IsNullOrEmpty(TxtFornecedor.Text))
+                if (string.IsNullOrEmpty(CblFornecedor.Text))
                     LblFornecedor.Font = new Font(this.Font, FontStyle.Bold);
 
                 //Lowlight();

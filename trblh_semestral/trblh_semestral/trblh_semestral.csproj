@@ -97,6 +97,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Fornecedor.cs" />
     <Compile Include="FrmCadFor.cs">
       <SubType>Form</SubType>
     </Compile>

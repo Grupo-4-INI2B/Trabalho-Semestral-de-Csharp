@@ -41,7 +41,6 @@
             this.TxtProduto = new System.Windows.Forms.TextBox();
             this.TxtCategoria = new System.Windows.Forms.TextBox();
             this.TxtDescricao = new System.Windows.Forms.TextBox();
-            this.TxtFornecedor = new System.Windows.Forms.TextBox();
             this.DtCadastro = new System.Windows.Forms.DateTimePicker();
             this.DtValidade = new System.Windows.Forms.DateTimePicker();
             this.NumQuantidade = new System.Windows.Forms.NumericUpDown();
@@ -54,6 +53,7 @@
             this.TxtBusca = new System.Windows.Forms.TextBox();
             this.BtnBusca = new System.Windows.Forms.Button();
             this.DtgProduto = new System.Windows.Forms.DataGridView();
+            this.CblFornecedor = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.NumQuantidade)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumPreco)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DtgProduto)).BeginInit();
@@ -169,13 +169,6 @@
             this.TxtDescricao.Name = "TxtDescricao";
             this.TxtDescricao.Size = new System.Drawing.Size(100, 22);
             this.TxtDescricao.TabIndex = 12;
-            // 
-            // TxtFornecedor
-            // 
-            this.TxtFornecedor.Location = new System.Drawing.Point(275, 145);
-            this.TxtFornecedor.Name = "TxtFornecedor";
-            this.TxtFornecedor.Size = new System.Drawing.Size(100, 22);
-            this.TxtFornecedor.TabIndex = 13;
             // 
             // DtCadastro
             // 
@@ -294,11 +287,20 @@
             this.DtgProduto.Size = new System.Drawing.Size(708, 150);
             this.DtgProduto.TabIndex = 19;
             // 
+            // CblFornecedor
+            // 
+            this.CblFornecedor.FormattingEnabled = true;
+            this.CblFornecedor.Location = new System.Drawing.Point(275, 145);
+            this.CblFornecedor.Name = "CblFornecedor";
+            this.CblFornecedor.Size = new System.Drawing.Size(100, 24);
+            this.CblFornecedor.TabIndex = 26;
+            // 
             // FrmCadProd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.CblFornecedor);
             this.Controls.Add(this.BtnBusca);
             this.Controls.Add(this.TxtBusca);
             this.Controls.Add(this.BtnExcluir);
@@ -311,7 +313,6 @@
             this.Controls.Add(this.NumQuantidade);
             this.Controls.Add(this.DtValidade);
             this.Controls.Add(this.DtCadastro);
-            this.Controls.Add(this.TxtFornecedor);
             this.Controls.Add(this.TxtDescricao);
             this.Controls.Add(this.TxtCategoria);
             this.Controls.Add(this.TxtProduto);
@@ -350,7 +351,6 @@
         private System.Windows.Forms.TextBox TxtProduto;
         private System.Windows.Forms.TextBox TxtCategoria;
         private System.Windows.Forms.TextBox TxtDescricao;
-        private System.Windows.Forms.TextBox TxtFornecedor;
         private System.Windows.Forms.DateTimePicker DtCadastro;
         private System.Windows.Forms.DateTimePicker DtValidade;
         private System.Windows.Forms.NumericUpDown NumQuantidade;
@@ -363,5 +363,6 @@
         private System.Windows.Forms.TextBox TxtBusca;
         private System.Windows.Forms.Button BtnBusca;
         private System.Windows.Forms.DataGridView DtgProduto;
+        private System.Windows.Forms.ComboBox CblFornecedor;
     }
 }
