@@ -34,7 +34,9 @@ namespace trblh_semestral
         {
             string query = comando != null
                 ? comando
-                : "SELECT * FROM Produto ORDER BY idProduto;";
+                : "SELECT p.*, f.nomeFornecedor " +
+                "FROM Produto p " +
+                "INNER JOIN Fornecedor f ON p.fornecedor = f.idFornecedor;";
 
             try
             {
@@ -100,8 +102,8 @@ namespace trblh_semestral
             NumQuantidade.Value = 0;
             NumPreco.Value = 0.00M;
             CblFornecedor.ResetText();
-            DtCadastro.Value = DateTime.MaxValue;
-            DtValidade.Value= DateTime.MaxValue;
+            DtCadastro.Value = DateTime.Now;
+            DtValidade.Value= DateTime.Now;
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -133,7 +135,7 @@ namespace trblh_semestral
                         $"validade, disponivel, qtnd, preco, fornecedor) VALUES " +
                         $"('{TxtProduto.Text}','{TxtCategoria.Text}','{TxtDescricao.Text}'," +
                         $"'{dataCadastro}','{dataValidade}',{Disponivel()},{NumQuantidade.Value}," +
-                        $"{NumPreco.Value}, '{(int)CblFornecedor.SelectedValue}');";
+                        $"{NumPreco.Value}, {(int)CblFornecedor.SelectedValue} );";
 
 
                     conexao.Query(sql: query); //Executa a inserção de dados
