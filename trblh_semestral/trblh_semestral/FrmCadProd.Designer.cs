@@ -206,6 +206,11 @@
             // NumPreco
             // 
             this.NumPreco.DecimalPlaces = 2;
+            this.NumPreco.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            65536});
             this.NumPreco.Location = new System.Drawing.Point(158, 144);
             this.NumPreco.Maximum = new decimal(new int[] {
             1000,
@@ -228,11 +233,11 @@
             // 
             // BtnCadastro
             // 
-            this.BtnCadastro.Location = new System.Drawing.Point(507, 198);
+            this.BtnCadastro.Location = new System.Drawing.Point(506, 198);
             this.BtnCadastro.Name = "BtnCadastro";
-            this.BtnCadastro.Size = new System.Drawing.Size(75, 23);
+            this.BtnCadastro.Size = new System.Drawing.Size(97, 23);
             this.BtnCadastro.TabIndex = 20;
-            this.BtnCadastro.Text = "Cadastro";
+            this.BtnCadastro.Text = "Cadastrar";
             this.BtnCadastro.UseVisualStyleBackColor = true;
             this.BtnCadastro.Click += new System.EventHandler(this.BtnCadastro_Click);
             // 
