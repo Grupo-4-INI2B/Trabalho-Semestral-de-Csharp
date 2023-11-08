@@ -29,16 +29,16 @@
         private void InitializeComponent()
         {
             this.LblAreaCad = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.LblNome = new System.Windows.Forms.Label();
+            this.LblCpf = new System.Windows.Forms.Label();
+            this.LblTelefone = new System.Windows.Forms.Label();
+            this.LblEmail = new System.Windows.Forms.Label();
+            this.LblEndereco = new System.Windows.Forms.Label();
+            this.TxtNome = new System.Windows.Forms.TextBox();
+            this.TxtEmail = new System.Windows.Forms.TextBox();
+            this.TxtCpf = new System.Windows.Forms.TextBox();
+            this.TxtTelefone = new System.Windows.Forms.TextBox();
+            this.TxtEndereco = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // LblAreaCad
@@ -52,91 +52,91 @@
             this.LblAreaCad.TabIndex = 0;
             this.LblAreaCad.Text = "Área de Cadastro de Fornecedores:";
             // 
-            // label1
+            // LblNome
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Cascadia Mono", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(122, 85);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(60, 22);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Nome:";
+            this.LblNome.AutoSize = true;
+            this.LblNome.Font = new System.Drawing.Font("Cascadia Mono", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblNome.Location = new System.Drawing.Point(122, 85);
+            this.LblNome.Name = "LblNome";
+            this.LblNome.Size = new System.Drawing.Size(60, 22);
+            this.LblNome.TabIndex = 1;
+            this.LblNome.Text = "Nome:";
             // 
-            // label2
+            // LblCpf
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Cascadia Mono", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(132, 129);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(50, 22);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "CPF:";
+            this.LblCpf.AutoSize = true;
+            this.LblCpf.Font = new System.Drawing.Font("Cascadia Mono", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblCpf.Location = new System.Drawing.Point(132, 129);
+            this.LblCpf.Name = "LblCpf";
+            this.LblCpf.Size = new System.Drawing.Size(50, 22);
+            this.LblCpf.TabIndex = 2;
+            this.LblCpf.Text = "CPF:";
             // 
-            // label3
+            // LblTelefone
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Cascadia Mono", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(405, 129);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(100, 22);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Telefone:";
+            this.LblTelefone.AutoSize = true;
+            this.LblTelefone.Font = new System.Drawing.Font("Cascadia Mono", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblTelefone.Location = new System.Drawing.Point(405, 129);
+            this.LblTelefone.Name = "LblTelefone";
+            this.LblTelefone.Size = new System.Drawing.Size(100, 22);
+            this.LblTelefone.TabIndex = 3;
+            this.LblTelefone.Text = "Telefone:";
             // 
-            // label4
+            // LblEmail
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Cascadia Mono", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(405, 85);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(80, 22);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "E-mail:";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+            this.LblEmail.AutoSize = true;
+            this.LblEmail.Font = new System.Drawing.Font("Cascadia Mono", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblEmail.Location = new System.Drawing.Point(405, 85);
+            this.LblEmail.Name = "LblEmail";
+            this.LblEmail.Size = new System.Drawing.Size(80, 22);
+            this.LblEmail.TabIndex = 4;
+            this.LblEmail.Text = "E-mail:";
+            this.LblEmail.Click += new System.EventHandler(this.label4_Click);
             // 
-            // label5
+            // LblEndereco
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Cascadia Mono", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(269, 172);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(100, 22);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "Endereço:";
+            this.LblEndereco.AutoSize = true;
+            this.LblEndereco.Font = new System.Drawing.Font("Cascadia Mono", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblEndereco.Location = new System.Drawing.Point(269, 172);
+            this.LblEndereco.Name = "LblEndereco";
+            this.LblEndereco.Size = new System.Drawing.Size(100, 22);
+            this.LblEndereco.TabIndex = 5;
+            this.LblEndereco.Text = "Endereço:";
             // 
-            // textBox1
+            // TxtNome
             // 
-            this.textBox1.Location = new System.Drawing.Point(188, 85);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(167, 22);
-            this.textBox1.TabIndex = 6;
+            this.TxtNome.Location = new System.Drawing.Point(188, 85);
+            this.TxtNome.Name = "TxtNome";
+            this.TxtNome.Size = new System.Drawing.Size(167, 22);
+            this.TxtNome.TabIndex = 6;
             // 
-            // textBox2
+            // TxtEmail
             // 
-            this.textBox2.Location = new System.Drawing.Point(490, 85);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(167, 22);
-            this.textBox2.TabIndex = 7;
+            this.TxtEmail.Location = new System.Drawing.Point(490, 85);
+            this.TxtEmail.Name = "TxtEmail";
+            this.TxtEmail.Size = new System.Drawing.Size(167, 22);
+            this.TxtEmail.TabIndex = 7;
             // 
-            // textBox3
+            // TxtCpf
             // 
-            this.textBox3.Location = new System.Drawing.Point(188, 129);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(167, 22);
-            this.textBox3.TabIndex = 8;
+            this.TxtCpf.Location = new System.Drawing.Point(188, 129);
+            this.TxtCpf.Name = "TxtCpf";
+            this.TxtCpf.Size = new System.Drawing.Size(167, 22);
+            this.TxtCpf.TabIndex = 8;
             // 
-            // textBox4
+            // TxtTelefone
             // 
-            this.textBox4.Location = new System.Drawing.Point(511, 127);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(146, 22);
-            this.textBox4.TabIndex = 9;
+            this.TxtTelefone.Location = new System.Drawing.Point(511, 127);
+            this.TxtTelefone.Name = "TxtTelefone";
+            this.TxtTelefone.Size = new System.Drawing.Size(146, 22);
+            this.TxtTelefone.TabIndex = 9;
             // 
-            // textBox5
+            // TxtEndereco
             // 
-            this.textBox5.Location = new System.Drawing.Point(375, 172);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(188, 22);
-            this.textBox5.TabIndex = 10;
+            this.TxtEndereco.Location = new System.Drawing.Point(375, 172);
+            this.TxtEndereco.Name = "TxtEndereco";
+            this.TxtEndereco.Size = new System.Drawing.Size(188, 22);
+            this.TxtEndereco.TabIndex = 10;
             // 
             // FrmCadFor
             // 
@@ -144,16 +144,16 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SkyBlue;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.TxtEndereco);
+            this.Controls.Add(this.TxtTelefone);
+            this.Controls.Add(this.TxtCpf);
+            this.Controls.Add(this.TxtEmail);
+            this.Controls.Add(this.TxtNome);
+            this.Controls.Add(this.LblEndereco);
+            this.Controls.Add(this.LblEmail);
+            this.Controls.Add(this.LblTelefone);
+            this.Controls.Add(this.LblCpf);
+            this.Controls.Add(this.LblNome);
             this.Controls.Add(this.LblAreaCad);
             this.Name = "FrmCadFor";
             this.Text = "Cadastro Fornecedores";
@@ -166,15 +166,15 @@
         #endregion
 
         private System.Windows.Forms.Label LblAreaCad;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Label LblNome;
+        private System.Windows.Forms.Label LblCpf;
+        private System.Windows.Forms.Label LblTelefone;
+        private System.Windows.Forms.Label LblEmail;
+        private System.Windows.Forms.Label LblEndereco;
+        private System.Windows.Forms.TextBox TxtNome;
+        private System.Windows.Forms.TextBox TxtEmail;
+        private System.Windows.Forms.TextBox TxtCpf;
+        private System.Windows.Forms.TextBox TxtTelefone;
+        private System.Windows.Forms.TextBox TxtEndereco;
     }
 }
