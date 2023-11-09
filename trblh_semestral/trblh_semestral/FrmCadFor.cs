@@ -73,6 +73,14 @@ namespace trblh_semestral
             TxtTelefone.Clear();
             TxtEndereco.Clear();
         }
+
+        private void VerificarNomeFornecedor()
+        {
+            try
+            {
+                
+            }
+        }
         private void BtnCadastro_Click(object sender, EventArgs e)
         {
             if (!string.IsNullOrEmpty(TxtFornecedor.Text) &&
