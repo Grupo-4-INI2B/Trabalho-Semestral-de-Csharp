@@ -56,7 +56,7 @@
             this.LblAreaCad.AutoSize = true;
             this.LblAreaCad.BackColor = System.Drawing.Color.WhiteSmoke;
             this.LblAreaCad.Font = new System.Drawing.Font("Cascadia Mono", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblAreaCad.Location = new System.Drawing.Point(183, 40);
+            this.LblAreaCad.Location = new System.Drawing.Point(217, 28);
             this.LblAreaCad.Name = "LblAreaCad";
             this.LblAreaCad.Size = new System.Drawing.Size(408, 27);
             this.LblAreaCad.TabIndex = 0;
@@ -66,7 +66,7 @@
             // 
             this.LblFornecedor.AutoSize = true;
             this.LblFornecedor.Font = new System.Drawing.Font("Cascadia Mono", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblFornecedor.Location = new System.Drawing.Point(122, 85);
+            this.LblFornecedor.Location = new System.Drawing.Point(102, 81);
             this.LblFornecedor.Name = "LblFornecedor";
             this.LblFornecedor.Size = new System.Drawing.Size(60, 22);
             this.LblFornecedor.TabIndex = 1;
@@ -86,7 +86,7 @@
             // 
             this.LblEmail.AutoSize = true;
             this.LblEmail.Font = new System.Drawing.Font("Cascadia Mono", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblEmail.Location = new System.Drawing.Point(122, 124);
+            this.LblEmail.Location = new System.Drawing.Point(102, 126);
             this.LblEmail.Name = "LblEmail";
             this.LblEmail.Size = new System.Drawing.Size(80, 22);
             this.LblEmail.TabIndex = 4;
@@ -97,7 +97,7 @@
             // 
             this.LblEndereco.AutoSize = true;
             this.LblEndereco.Font = new System.Drawing.Font("Cascadia Mono", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblEndereco.Location = new System.Drawing.Point(405, 124);
+            this.LblEndereco.Location = new System.Drawing.Point(405, 128);
             this.LblEndereco.Name = "LblEndereco";
             this.LblEndereco.Size = new System.Drawing.Size(100, 22);
             this.LblEndereco.TabIndex = 5;
@@ -105,14 +105,14 @@
             // 
             // TxtFornecedor
             // 
-            this.TxtFornecedor.Location = new System.Drawing.Point(188, 85);
+            this.TxtFornecedor.Location = new System.Drawing.Point(168, 83);
             this.TxtFornecedor.Name = "TxtFornecedor";
             this.TxtFornecedor.Size = new System.Drawing.Size(197, 22);
             this.TxtFornecedor.TabIndex = 6;
             // 
             // TxtEmail
             // 
-            this.TxtEmail.Location = new System.Drawing.Point(207, 124);
+            this.TxtEmail.Location = new System.Drawing.Point(188, 126);
             this.TxtEmail.Name = "TxtEmail";
             this.TxtEmail.Size = new System.Drawing.Size(178, 22);
             this.TxtEmail.TabIndex = 7;
@@ -126,33 +126,35 @@
             // 
             // TxtEndereco
             // 
-            this.TxtEndereco.Location = new System.Drawing.Point(511, 124);
+            this.TxtEndereco.Location = new System.Drawing.Point(511, 128);
             this.TxtEndereco.Name = "TxtEndereco";
             this.TxtEndereco.Size = new System.Drawing.Size(177, 22);
             this.TxtEndereco.TabIndex = 10;
             // 
             // BtnBusca
             // 
-            this.BtnBusca.Location = new System.Drawing.Point(221, 258);
+            this.BtnBusca.Font = new System.Drawing.Font("OCR A Extended", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnBusca.Location = new System.Drawing.Point(466, 230);
             this.BtnBusca.Name = "BtnBusca";
-            this.BtnBusca.Size = new System.Drawing.Size(75, 23);
+            this.BtnBusca.Size = new System.Drawing.Size(85, 31);
             this.BtnBusca.TabIndex = 32;
-            this.BtnBusca.Text = "Busca";
+            this.BtnBusca.Text = "Buscar";
             this.BtnBusca.UseVisualStyleBackColor = true;
             this.BtnBusca.Click += new System.EventHandler(this.BtnBusca_Click);
             // 
             // TxtBusca
             // 
-            this.TxtBusca.Location = new System.Drawing.Point(50, 260);
+            this.TxtBusca.Location = new System.Drawing.Point(72, 235);
             this.TxtBusca.Name = "TxtBusca";
-            this.TxtBusca.Size = new System.Drawing.Size(165, 22);
+            this.TxtBusca.Size = new System.Drawing.Size(388, 22);
             this.TxtBusca.TabIndex = 31;
             // 
             // BtnExcluir
             // 
-            this.BtnExcluir.Location = new System.Drawing.Point(443, 258);
+            this.BtnExcluir.Font = new System.Drawing.Font("OCR A Extended", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnExcluir.Location = new System.Drawing.Point(668, 230);
             this.BtnExcluir.Name = "BtnExcluir";
-            this.BtnExcluir.Size = new System.Drawing.Size(75, 23);
+            this.BtnExcluir.Size = new System.Drawing.Size(90, 31);
             this.BtnExcluir.TabIndex = 30;
             this.BtnExcluir.Text = "Excluir";
             this.BtnExcluir.UseVisualStyleBackColor = true;
@@ -160,9 +162,10 @@
             // 
             // BtnEditar
             // 
-            this.BtnEditar.Location = new System.Drawing.Point(351, 258);
+            this.BtnEditar.Font = new System.Drawing.Font("OCR A Extended", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnEditar.Location = new System.Drawing.Point(576, 230);
             this.BtnEditar.Name = "BtnEditar";
-            this.BtnEditar.Size = new System.Drawing.Size(75, 23);
+            this.BtnEditar.Size = new System.Drawing.Size(86, 31);
             this.BtnEditar.TabIndex = 29;
             this.BtnEditar.Text = "Editar";
             this.BtnEditar.UseVisualStyleBackColor = true;
@@ -170,9 +173,10 @@
             // 
             // BtnCancelar
             // 
-            this.BtnCancelar.Location = new System.Drawing.Point(443, 177);
+            this.BtnCancelar.Font = new System.Drawing.Font("OCR A Extended", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCancelar.Location = new System.Drawing.Point(424, 166);
             this.BtnCancelar.Name = "BtnCancelar";
-            this.BtnCancelar.Size = new System.Drawing.Size(75, 23);
+            this.BtnCancelar.Size = new System.Drawing.Size(113, 37);
             this.BtnCancelar.TabIndex = 28;
             this.BtnCancelar.Text = "Cancelar";
             this.BtnCancelar.UseVisualStyleBackColor = true;
@@ -180,9 +184,10 @@
             // 
             // BtnCadastro
             // 
-            this.BtnCadastro.Location = new System.Drawing.Point(255, 177);
+            this.BtnCadastro.Font = new System.Drawing.Font("OCR A Extended", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCadastro.Location = new System.Drawing.Point(283, 166);
             this.BtnCadastro.Name = "BtnCadastro";
-            this.BtnCadastro.Size = new System.Drawing.Size(97, 23);
+            this.BtnCadastro.Size = new System.Drawing.Size(106, 37);
             this.BtnCadastro.TabIndex = 27;
             this.BtnCadastro.Text = "Cadastrar";
             this.BtnCadastro.UseVisualStyleBackColor = true;
@@ -191,11 +196,11 @@
             // DtgFornecedor
             // 
             this.DtgFornecedor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DtgFornecedor.Location = new System.Drawing.Point(50, 288);
+            this.DtgFornecedor.Location = new System.Drawing.Point(50, 270);
             this.DtgFornecedor.Name = "DtgFornecedor";
             this.DtgFornecedor.RowHeadersWidth = 51;
             this.DtgFornecedor.RowTemplate.Height = 24;
-            this.DtgFornecedor.Size = new System.Drawing.Size(708, 150);
+            this.DtgFornecedor.Size = new System.Drawing.Size(708, 168);
             this.DtgFornecedor.TabIndex = 26;
             this.DtgFornecedor.RowHeaderMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.DtgFornecedor_RowHeaderMouseDoubleClick);
             // 
