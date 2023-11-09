@@ -55,17 +55,23 @@
             this.DtgProduto = new System.Windows.Forms.DataGridView();
             this.CblFornecedor = new System.Windows.Forms.ComboBox();
             this.LblAleatorio = new System.Windows.Forms.Label();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.TsmAjuda = new System.Windows.Forms.ToolStripMenuItem();
+            this.TsmVoltar = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.NumQuantidade)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumPreco)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DtgProduto)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // LblAreaCadProd
             // 
             this.LblAreaCadProd.AutoSize = true;
-            this.LblAreaCadProd.Location = new System.Drawing.Point(13, 13);
+            this.LblAreaCadProd.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.LblAreaCadProd.Font = new System.Drawing.Font("Cascadia Mono SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblAreaCadProd.Location = new System.Drawing.Point(219, 44);
             this.LblAreaCadProd.Name = "LblAreaCadProd";
-            this.LblAreaCadProd.Size = new System.Drawing.Size(208, 16);
+            this.LblAreaCadProd.Size = new System.Drawing.Size(384, 27);
             this.LblAreaCadProd.TabIndex = 0;
             this.LblAreaCadProd.Text = "Cadastro e Pesquisa de produtos";
             // 
@@ -280,7 +286,7 @@
             // DtgProduto
             // 
             this.DtgProduto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DtgProduto.Location = new System.Drawing.Point(41, 280);
+            this.DtgProduto.Location = new System.Drawing.Point(41, 288);
             this.DtgProduto.Name = "DtgProduto";
             this.DtgProduto.RowHeadersWidth = 51;
             this.DtgProduto.RowTemplate.Height = 24;
@@ -306,11 +312,38 @@
             this.LblAleatorio.Text = "Aleatorio";
             this.LblAleatorio.Visible = false;
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.TsmAjuda,
+            this.TsmVoltar});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(800, 28);
+            this.menuStrip1.TabIndex = 28;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // TsmAjuda
+            // 
+            this.TsmAjuda.Name = "TsmAjuda";
+            this.TsmAjuda.Size = new System.Drawing.Size(62, 24);
+            this.TsmAjuda.Text = "Ajuda";
+            this.TsmAjuda.Click += new System.EventHandler(this.TsmAjuda_Click);
+            // 
+            // TsmVoltar
+            // 
+            this.TsmVoltar.Name = "TsmVoltar";
+            this.TsmVoltar.Size = new System.Drawing.Size(62, 24);
+            this.TsmVoltar.Text = "Voltar";
+            this.TsmVoltar.Click += new System.EventHandler(this.TsmVoltar_Click);
+            // 
             // FrmCadProd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BackColor = System.Drawing.Color.SkyBlue;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.LblAleatorio);
             this.Controls.Add(this.CblFornecedor);
@@ -339,13 +372,18 @@
             this.Controls.Add(this.LblCategoria);
             this.Controls.Add(this.LblProduto);
             this.Controls.Add(this.LblAreaCadProd);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrmCadProd";
             this.Text = "Cadastro e Pesquisa de Produtos";
+            this.Load += new System.EventHandler(this.FrmCadProd_Load);
             ((System.ComponentModel.ISupportInitialize)(this.NumQuantidade)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumPreco)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DtgProduto)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -380,5 +418,8 @@
         private System.Windows.Forms.DataGridView DtgProduto;
         private System.Windows.Forms.ComboBox CblFornecedor;
         private System.Windows.Forms.Label LblAleatorio;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem TsmAjuda;
+        private System.Windows.Forms.ToolStripMenuItem TsmVoltar;
     }
 }

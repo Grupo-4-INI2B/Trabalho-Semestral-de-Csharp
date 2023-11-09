@@ -44,17 +44,22 @@
             this.BtnCancelar = new System.Windows.Forms.Button();
             this.BtnCadastro = new System.Windows.Forms.Button();
             this.DtgFornecedor = new System.Windows.Forms.DataGridView();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.TsmAjuda = new System.Windows.Forms.ToolStripMenuItem();
+            this.TsmVoltar = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.DtgFornecedor)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // LblAreaCad
             // 
             this.LblAreaCad.AutoSize = true;
             this.LblAreaCad.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.LblAreaCad.Font = new System.Drawing.Font("Cascadia Mono SemiBold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblAreaCad.Location = new System.Drawing.Point(183, 24);
+            this.LblAreaCad.Font = new System.Drawing.Font("Cascadia Mono", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblAreaCad.Location = new System.Drawing.Point(183, 40);
             this.LblAreaCad.Name = "LblAreaCad";
-            this.LblAreaCad.Size = new System.Drawing.Size(442, 30);
+            this.LblAreaCad.Size = new System.Drawing.Size(408, 27);
             this.LblAreaCad.TabIndex = 0;
             this.LblAreaCad.Text = "Área de Cadastro de Fornecedores:";
             // 
@@ -195,6 +200,38 @@
             this.DtgFornecedor.TabIndex = 26;
             this.DtgFornecedor.RowHeaderMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.DtgFornecedor_RowHeaderMouseDoubleClick);
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem1,
+            this.TsmAjuda,
+            this.TsmVoltar});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(800, 30);
+            this.menuStrip1.TabIndex = 33;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(14, 24);
+            // 
+            // TsmAjuda
+            // 
+            this.TsmAjuda.Name = "TsmAjuda";
+            this.TsmAjuda.Size = new System.Drawing.Size(62, 24);
+            this.TsmAjuda.Text = "Ajuda";
+            this.TsmAjuda.Click += new System.EventHandler(this.TsmAjuda_Click);
+            // 
+            // TsmVoltar
+            // 
+            this.TsmVoltar.Name = "TsmVoltar";
+            this.TsmVoltar.Size = new System.Drawing.Size(62, 24);
+            this.TsmVoltar.Text = "Voltar";
+            this.TsmVoltar.Click += new System.EventHandler(this.TsmVoltar_Click);
+            // 
             // FrmCadFor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -218,12 +255,16 @@
             this.Controls.Add(this.LblTelefone);
             this.Controls.Add(this.LblFornecedor);
             this.Controls.Add(this.LblAreaCad);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrmCadFor";
             this.Text = "Cadastro e Pesquisa Fornecedores";
             this.Load += new System.EventHandler(this.FrmCadFor_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DtgFornecedor)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -247,5 +288,9 @@
         private System.Windows.Forms.Button BtnCancelar;
         private System.Windows.Forms.Button BtnCadastro;
         private System.Windows.Forms.DataGridView DtgFornecedor;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem TsmAjuda;
+        private System.Windows.Forms.ToolStripMenuItem TsmVoltar;
     }
 }
