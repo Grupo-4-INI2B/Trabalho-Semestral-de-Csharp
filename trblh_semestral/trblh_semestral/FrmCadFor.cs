@@ -74,13 +74,7 @@ namespace trblh_semestral
             TxtEndereco.Clear();
         }
 
-        private void VerificarNomeFornecedor()
-        {
-            //try
-            //{
-                
-            //}
-        }
+        
         private void BtnCadastro_Click(object sender, EventArgs e)
         {
             if (!string.IsNullOrEmpty(TxtFornecedor.Text) &&
@@ -92,7 +86,7 @@ namespace trblh_semestral
                         $"WHERE nomeFornecedor='{TxtFornecedor.Text}';";
                 if (procura != null)
                 {
-                    MessageBox.Show("Já existe um fornecedor com esse nome cadastrado");
+                    MessageBox.Show("Já existe um fornecedor com esse nome cadastrado","Atenção!!");
                 }
                 else {
                     try {
@@ -240,5 +234,17 @@ namespace trblh_semestral
                 MessageBox.Show("Preencha o campo!");
             }
         }
+
+        private void TsmAjuda_Click(object sender, EventArgs e)
+        {
+            FrmInformacoes frmInformacoes = new FrmInformacoes();
+            frmInformacoes.ShowDialog();
+
+        }
+        private void TsmVoltar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
     }
 }

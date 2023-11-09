@@ -314,6 +314,7 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.Color.Transparent;
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.TsmAjuda,
@@ -326,6 +327,7 @@
             // 
             // TsmAjuda
             // 
+            this.TsmAjuda.BackColor = System.Drawing.Color.WhiteSmoke;
             this.TsmAjuda.Name = "TsmAjuda";
             this.TsmAjuda.Size = new System.Drawing.Size(62, 24);
             this.TsmAjuda.Text = "Ajuda";
@@ -333,6 +335,7 @@
             // 
             // TsmVoltar
             // 
+            this.TsmVoltar.BackColor = System.Drawing.Color.WhiteSmoke;
             this.TsmVoltar.Name = "TsmVoltar";
             this.TsmVoltar.Size = new System.Drawing.Size(62, 24);
             this.TsmVoltar.Text = "Voltar";

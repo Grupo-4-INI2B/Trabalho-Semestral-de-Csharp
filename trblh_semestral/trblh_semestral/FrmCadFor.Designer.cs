@@ -45,7 +45,6 @@
             this.BtnCadastro = new System.Windows.Forms.Button();
             this.DtgFornecedor = new System.Windows.Forms.DataGridView();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.TsmAjuda = new System.Windows.Forms.ToolStripMenuItem();
             this.TsmVoltar = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.DtgFornecedor)).BeginInit();
@@ -202,24 +201,20 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.Color.Transparent;
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem1,
             this.TsmAjuda,
             this.TsmVoltar});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 30);
+            this.menuStrip1.Size = new System.Drawing.Size(800, 28);
             this.menuStrip1.TabIndex = 33;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(14, 24);
-            // 
             // TsmAjuda
             // 
+            this.TsmAjuda.BackColor = System.Drawing.Color.WhiteSmoke;
             this.TsmAjuda.Name = "TsmAjuda";
             this.TsmAjuda.Size = new System.Drawing.Size(62, 24);
             this.TsmAjuda.Text = "Ajuda";
@@ -227,6 +222,7 @@
             // 
             // TsmVoltar
             // 
+            this.TsmVoltar.BackColor = System.Drawing.Color.WhiteSmoke;
             this.TsmVoltar.Name = "TsmVoltar";
             this.TsmVoltar.Size = new System.Drawing.Size(62, 24);
             this.TsmVoltar.Text = "Voltar";
@@ -289,7 +285,6 @@
         private System.Windows.Forms.Button BtnCadastro;
         private System.Windows.Forms.DataGridView DtgFornecedor;
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem TsmAjuda;
         private System.Windows.Forms.ToolStripMenuItem TsmVoltar;
     }
