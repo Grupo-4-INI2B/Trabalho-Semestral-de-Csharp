@@ -237,46 +237,50 @@
             // 
             // BtnCadastro
             // 
-            this.BtnCadastro.Font = new System.Drawing.Font("OCR A Extended", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCadastro.BackColor = System.Drawing.Color.Azure;
+            this.BtnCadastro.Font = new System.Drawing.Font("Cascadia Mono", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnCadastro.Location = new System.Drawing.Point(422, 181);
             this.BtnCadastro.Name = "BtnCadastro";
             this.BtnCadastro.Size = new System.Drawing.Size(108, 38);
             this.BtnCadastro.TabIndex = 20;
             this.BtnCadastro.Text = "Cadastrar";
-            this.BtnCadastro.UseVisualStyleBackColor = true;
+            this.BtnCadastro.UseVisualStyleBackColor = false;
             this.BtnCadastro.Click += new System.EventHandler(this.BtnCadastro_Click);
             // 
             // BtnCancelar
             // 
-            this.BtnCancelar.Font = new System.Drawing.Font("OCR A Extended", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCancelar.BackColor = System.Drawing.Color.Azure;
+            this.BtnCancelar.Font = new System.Drawing.Font("Cascadia Mono", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnCancelar.Location = new System.Drawing.Point(553, 181);
             this.BtnCancelar.Name = "BtnCancelar";
             this.BtnCancelar.Size = new System.Drawing.Size(108, 38);
             this.BtnCancelar.TabIndex = 21;
             this.BtnCancelar.Text = "Cancelar";
-            this.BtnCancelar.UseVisualStyleBackColor = true;
+            this.BtnCancelar.UseVisualStyleBackColor = false;
             this.BtnCancelar.Click += new System.EventHandler(this.BtnCancelar_Click);
             // 
             // BtnEditar
             // 
-            this.BtnEditar.Font = new System.Drawing.Font("OCR A Extended", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnEditar.Location = new System.Drawing.Point(560, 237);
+            this.BtnEditar.BackColor = System.Drawing.Color.Azure;
+            this.BtnEditar.Font = new System.Drawing.Font("Cascadia Mono", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnEditar.Location = new System.Drawing.Point(560, 239);
             this.BtnEditar.Name = "BtnEditar";
-            this.BtnEditar.Size = new System.Drawing.Size(84, 28);
+            this.BtnEditar.Size = new System.Drawing.Size(84, 31);
             this.BtnEditar.TabIndex = 22;
             this.BtnEditar.Text = "Editar";
-            this.BtnEditar.UseVisualStyleBackColor = true;
+            this.BtnEditar.UseVisualStyleBackColor = false;
             this.BtnEditar.Click += new System.EventHandler(this.BtnEditar_Click);
             // 
             // BtnExcluir
             // 
-            this.BtnExcluir.Font = new System.Drawing.Font("OCR A Extended", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnExcluir.Location = new System.Drawing.Point(650, 237);
+            this.BtnExcluir.BackColor = System.Drawing.Color.Azure;
+            this.BtnExcluir.Font = new System.Drawing.Font("Cascadia Mono", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnExcluir.Location = new System.Drawing.Point(650, 239);
             this.BtnExcluir.Name = "BtnExcluir";
-            this.BtnExcluir.Size = new System.Drawing.Size(99, 28);
+            this.BtnExcluir.Size = new System.Drawing.Size(99, 31);
             this.BtnExcluir.TabIndex = 23;
             this.BtnExcluir.Text = "Excluir";
-            this.BtnExcluir.UseVisualStyleBackColor = true;
+            this.BtnExcluir.UseVisualStyleBackColor = false;
             this.BtnExcluir.Click += new System.EventHandler(this.BtnExcluir_Click);
             // 
             // TxtBusca
@@ -288,13 +292,14 @@
             // 
             // BtnBusca
             // 
-            this.BtnBusca.Font = new System.Drawing.Font("OCR A Extended", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnBusca.BackColor = System.Drawing.Color.Azure;
+            this.BtnBusca.Font = new System.Drawing.Font("Cascadia Mono", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnBusca.Location = new System.Drawing.Point(446, 239);
             this.BtnBusca.Name = "BtnBusca";
-            this.BtnBusca.Size = new System.Drawing.Size(84, 28);
+            this.BtnBusca.Size = new System.Drawing.Size(84, 31);
             this.BtnBusca.TabIndex = 25;
             this.BtnBusca.Text = "Buscar";
-            this.BtnBusca.UseVisualStyleBackColor = true;
+            this.BtnBusca.UseVisualStyleBackColor = false;
             this.BtnBusca.Click += new System.EventHandler(this.BtnBusca_Click);
             // 
             // DtgProduto
@@ -318,14 +323,15 @@
             // 
             // menuStrip1
             // 
-            this.menuStrip1.BackColor = System.Drawing.Color.Transparent;
+            this.menuStrip1.BackColor = System.Drawing.Color.SkyBlue;
+            this.menuStrip1.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.TsmAjuda,
             this.TsmVoltar});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(800, 26);
             this.menuStrip1.TabIndex = 28;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -341,7 +347,7 @@
             // 
             this.TsmVoltar.BackColor = System.Drawing.Color.WhiteSmoke;
             this.TsmVoltar.Name = "TsmVoltar";
-            this.TsmVoltar.Size = new System.Drawing.Size(62, 26);
+            this.TsmVoltar.Size = new System.Drawing.Size(70, 26);
             this.TsmVoltar.Text = "Voltar";
             this.TsmVoltar.Click += new System.EventHandler(this.TsmVoltar_Click);
             // 
