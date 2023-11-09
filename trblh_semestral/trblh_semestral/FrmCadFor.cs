@@ -88,7 +88,7 @@ namespace trblh_semestral
 
 
                     conexao.Query(sql: query); //Executa a inserção de dados
-                    MessageBox.Show("Produto cadastrado com sucesso!");
+                    MessageBox.Show("Fornecedor cadastrado com sucesso!");
                     Recarrega();
                 }
                 catch (NpgsqlException ex)

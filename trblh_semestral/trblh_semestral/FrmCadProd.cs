@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -121,7 +122,7 @@ namespace trblh_semestral
                 try
                 {
                     Disponivel();
-                    //Tratamento da data de adoção
+                    //Tratamento da data 
                     var dc = DtCadastro.Value.Day;
                     var mc = DtCadastro.Value.Month;
                     var yc= DtCadastro.Value.Year;
@@ -133,12 +134,13 @@ namespace trblh_semestral
                     string dataValidade = yv + "/" + mv + "/" + dv;
 
                     int idFornSelecionado = (int)CblFornecedor.SelectedValue;
-                    //LblAleatorio.Text = $"{idFornSelecionado}";
+                    //LblAleatorio.Text = $"{NumPreco.Value}";
+
                     var query = $"INSERT INTO Produto (nomeProduto,categoria, descricao, data," +
                         $"validade, disponivel, qtnd, preco, fornecedor) VALUES " +
                         $"('{TxtProduto.Text}','{TxtCategoria.Text}','{TxtDescricao.Text}'," +
-                        $"'{dataCadastro}','{dataValidade}',{Disponivel()},{NumQuantidade.Value}," +
-                        $"{NumPreco.Value}, {idFornSelecionado} );";
+                        $"'{dataCadastro}','{dataValidade}','{Disponivel()}','{NumQuantidade.Value}'," +
+                        $"'{(NumPreco.Value).ToString(CultureInfo.InvariantCulture)}', '{idFornSelecionado}');";
                                 
 
                     conexao.Query(sql: query); //Executa a inserção de dados
@@ -245,7 +247,7 @@ namespace trblh_semestral
                 NumQuantidade.Value = int.Parse(quantidadeProduto.ToString());
                 NumPreco.Value = decimal.Parse(precoProduto.ToString());
                 //CblFornecedor.Text = fornecedor.ToString();
-                int idFornecedor = (int)fornecedor; // Suponha que você tenha o id do fornecedor associado ao produto
+                int idFornecedor = (int)fornecedor; 
                 CblFornecedor.SelectedIndex = ObterIndiceFornecedorPorId(idFornecedor);
 
 
@@ -272,18 +274,28 @@ namespace trblh_semestral
         {
             try
             {
+                var dc = DtCadastro.Value.Day;
+                var mc = DtCadastro.Value.Month;
+                var yc = DtCadastro.Value.Year;
+                string dataCadastro = yc + "/" + mc + "/" + dc;
+
+                var dv = DtValidade.Value.Day;
+                var mv = DtValidade.Value.Month;
+                var yv = DtValidade.Value.Year;
+                string dataValidade = yv + "/" + mv + "/" + dv;
+
                 int idFornSelecionado = (int)CblFornecedor.SelectedValue;
                 //Fornecedor fornecedor = new Fornecedor();
                 var update = $"UPDATE Produto SET nomeProduto = '{TxtProduto.Text}'," +
                     $"categoria = '{TxtCategoria.Text}'," +
                     $"descricao = '{TxtDescricao.Text}'," +
-                    $"data = '{DtCadastro.Text}'," +
-                    $"validade = '{DtCadastro.Text}'," +
+                    $"data = '{dataCadastro}'," +
+                    $"validade = '{dataValidade}'," +
                     $"disponivel = '{ChkDisponivel.Checked}'," +
-                    $"quantidade = '{NumQuantidade.Value}'," +
-                    $"preco = '{NumPreco.Value}'," +
+                    $"qtnd = '{NumQuantidade.Value}'," +
+                    $"preco = '{(NumPreco.Value).ToString(CultureInfo.InvariantCulture)}'," +
                     $"fornecedor = '{idFornSelecionado}'" +
-                    $"WHERE idFornecedor = {this.idProduto};";
+                    $"WHERE idProduto = {this.idProduto};";
 
                 conexao.Query(sql: update);
 
@@ -308,7 +320,7 @@ namespace trblh_semestral
                     var delete = $"DELETE FROM Fornecedor WHERE idFornecedor={this.idProduto}";
                     conexao.Query(sql: delete);
 
-                    MessageBox.Show("Fornecedor excluído com sucesso!!");
+                    MessageBox.Show("Produto excluído com sucesso!!");
 
                     Recarrega();
                 }

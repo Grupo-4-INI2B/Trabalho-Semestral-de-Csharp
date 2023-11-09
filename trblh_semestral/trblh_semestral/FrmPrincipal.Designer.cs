@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPrincipal));
-            this.BtnPesquisa = new System.Windows.Forms.Button();
             this.BtnCadFor = new System.Windows.Forms.Button();
             this.BtnInformacoes = new System.Windows.Forms.Button();
             this.Img = new System.Windows.Forms.ImageList(this.components);
@@ -38,27 +37,15 @@
             this.LblOqDeseja = new System.Windows.Forms.Label();
             this.BtnCadProd = new System.Windows.Forms.Button();
             this.PicPokemarket = new System.Windows.Forms.PictureBox();
+            this.BtnPesquisa = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.PicPokemarket)).BeginInit();
             this.SuspendLayout();
-            // 
-            // BtnPesquisa
-            // 
-            this.BtnPesquisa.BackColor = System.Drawing.Color.AliceBlue;
-            this.BtnPesquisa.Font = new System.Drawing.Font("Cascadia Code", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnPesquisa.Location = new System.Drawing.Point(344, 220);
-            this.BtnPesquisa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.BtnPesquisa.Name = "BtnPesquisa";
-            this.BtnPesquisa.Size = new System.Drawing.Size(140, 49);
-            this.BtnPesquisa.TabIndex = 0;
-            this.BtnPesquisa.Text = "Pesquisa de produtos";
-            this.BtnPesquisa.UseVisualStyleBackColor = false;
-            this.BtnPesquisa.Click += new System.EventHandler(this.BtnPesquisa_Click);
             // 
             // BtnCadFor
             // 
             this.BtnCadFor.BackColor = System.Drawing.Color.AliceBlue;
             this.BtnCadFor.Font = new System.Drawing.Font("Cascadia Code", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnCadFor.Location = new System.Drawing.Point(344, 277);
+            this.BtnCadFor.Location = new System.Drawing.Point(318, 261);
             this.BtnCadFor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnCadFor.Name = "BtnCadFor";
             this.BtnCadFor.Size = new System.Drawing.Size(140, 49);
@@ -72,7 +59,7 @@
             this.BtnInformacoes.BackColor = System.Drawing.Color.AliceBlue;
             this.BtnInformacoes.Font = new System.Drawing.Font("Cascadia Code", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnInformacoes.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.BtnInformacoes.Location = new System.Drawing.Point(344, 383);
+            this.BtnInformacoes.Location = new System.Drawing.Point(318, 367);
             this.BtnInformacoes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnInformacoes.Name = "BtnInformacoes";
             this.BtnInformacoes.Size = new System.Drawing.Size(140, 49);
@@ -92,7 +79,7 @@
             this.LblBemVindo.AutoSize = true;
             this.LblBemVindo.BackColor = System.Drawing.Color.WhiteSmoke;
             this.LblBemVindo.Font = new System.Drawing.Font("Cascadia Code SemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblBemVindo.Location = new System.Drawing.Point(223, 161);
+            this.LblBemVindo.Location = new System.Drawing.Point(197, 171);
             this.LblBemVindo.Name = "LblBemVindo";
             this.LblBemVindo.Size = new System.Drawing.Size(350, 32);
             this.LblBemVindo.TabIndex = 4;
@@ -102,7 +89,7 @@
             // 
             this.LblOqDeseja.AutoSize = true;
             this.LblOqDeseja.Font = new System.Drawing.Font("Cascadia Code", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblOqDeseja.Location = new System.Drawing.Point(331, 192);
+            this.LblOqDeseja.Location = new System.Drawing.Point(313, 203);
             this.LblOqDeseja.Name = "LblOqDeseja";
             this.LblOqDeseja.Size = new System.Drawing.Size(155, 25);
             this.LblOqDeseja.TabIndex = 5;
@@ -113,7 +100,7 @@
             // 
             this.BtnCadProd.BackColor = System.Drawing.Color.AliceBlue;
             this.BtnCadProd.Font = new System.Drawing.Font("Cascadia Code", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnCadProd.Location = new System.Drawing.Point(344, 330);
+            this.BtnCadProd.Location = new System.Drawing.Point(318, 314);
             this.BtnCadProd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnCadProd.Name = "BtnCadProd";
             this.BtnCadProd.Size = new System.Drawing.Size(140, 49);
@@ -126,17 +113,32 @@
             // 
             this.PicPokemarket.BackgroundImage = global::trblh_semestral.Properties.Resources.pokemartexterior;
             this.PicPokemarket.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.PicPokemarket.Location = new System.Drawing.Point(325, 1);
+            this.PicPokemarket.Location = new System.Drawing.Point(299, 11);
             this.PicPokemarket.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PicPokemarket.Name = "PicPokemarket";
             this.PicPokemarket.Size = new System.Drawing.Size(173, 158);
             this.PicPokemarket.TabIndex = 3;
             this.PicPokemarket.TabStop = false;
             // 
+            // BtnPesquisa
+            // 
+            this.BtnPesquisa.BackColor = System.Drawing.Color.AliceBlue;
+            this.BtnPesquisa.Font = new System.Drawing.Font("Cascadia Code", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnPesquisa.Location = new System.Drawing.Point(318, 230);
+            this.BtnPesquisa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.BtnPesquisa.Name = "BtnPesquisa";
+            this.BtnPesquisa.Size = new System.Drawing.Size(140, 49);
+            this.BtnPesquisa.TabIndex = 0;
+            this.BtnPesquisa.Text = "Pesquisa de produtos";
+            this.BtnPesquisa.UseVisualStyleBackColor = false;
+            this.BtnPesquisa.Visible = false;
+            this.BtnPesquisa.Click += new System.EventHandler(this.BtnPesquisa_Click);
+            // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.SkyBlue;
             this.ClientSize = new System.Drawing.Size(813, 458);
             this.Controls.Add(this.BtnCadProd);
@@ -147,6 +149,8 @@
             this.Controls.Add(this.BtnCadFor);
             this.Controls.Add(this.BtnPesquisa);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FrmPrincipal";
             this.Text = "Pokemarket - Home";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -157,8 +161,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button BtnPesquisa;
         private System.Windows.Forms.Button BtnCadFor;
         private System.Windows.Forms.Button BtnInformacoes;
         private System.Windows.Forms.ImageList Img;
@@ -166,6 +168,7 @@
         private System.Windows.Forms.Label LblOqDeseja;
         private System.Windows.Forms.Button BtnCadProd;
         private System.Windows.Forms.PictureBox PicPokemarket;
+        private System.Windows.Forms.Button BtnPesquisa;
     }
 }
 

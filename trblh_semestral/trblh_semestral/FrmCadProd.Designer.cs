@@ -200,11 +200,6 @@
             // NumPreco
             // 
             this.NumPreco.DecimalPlaces = 2;
-            this.NumPreco.Increment = new decimal(new int[] {
-            1,
-            0,
-            0,
-            65536});
             this.NumPreco.Location = new System.Drawing.Point(158, 144);
             this.NumPreco.Maximum = new decimal(new int[] {
             1000,
@@ -304,7 +299,7 @@
             // LblAleatorio
             // 
             this.LblAleatorio.AutoSize = true;
-            this.LblAleatorio.Location = new System.Drawing.Point(739, 433);
+            this.LblAleatorio.Location = new System.Drawing.Point(690, 206);
             this.LblAleatorio.Name = "LblAleatorio";
             this.LblAleatorio.Size = new System.Drawing.Size(61, 16);
             this.LblAleatorio.TabIndex = 27;
@@ -315,6 +310,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.LblAleatorio);
             this.Controls.Add(this.CblFornecedor);
@@ -343,8 +339,10 @@
             this.Controls.Add(this.LblCategoria);
             this.Controls.Add(this.LblProduto);
             this.Controls.Add(this.LblAreaCadProd);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FrmCadProd";
-            this.Text = "FrmCadProd";
+            this.Text = "Cadastro e Pesquisa de Produtos";
             ((System.ComponentModel.ISupportInitialize)(this.NumQuantidade)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumPreco)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DtgProduto)).EndInit();

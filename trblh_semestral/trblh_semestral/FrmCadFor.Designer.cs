@@ -199,6 +199,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.SkyBlue;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.BtnBusca);
@@ -217,8 +218,10 @@
             this.Controls.Add(this.LblTelefone);
             this.Controls.Add(this.LblFornecedor);
             this.Controls.Add(this.LblAreaCad);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FrmCadFor";
-            this.Text = "Cadastro Fornecedores";
+            this.Text = "Cadastro e Pesquisa Fornecedores";
             this.Load += new System.EventHandler(this.FrmCadFor_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DtgFornecedor)).EndInit();
             this.ResumeLayout(false);
