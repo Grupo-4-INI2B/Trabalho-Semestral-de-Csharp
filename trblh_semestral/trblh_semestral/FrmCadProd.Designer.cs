@@ -253,6 +253,7 @@
             this.BtnEditar.TabIndex = 22;
             this.BtnEditar.Text = "Editar";
             this.BtnEditar.UseVisualStyleBackColor = true;
+            this.BtnEditar.Click += new System.EventHandler(this.BtnEditar_Click);
             // 
             // BtnExcluir
             // 
@@ -262,6 +263,7 @@
             this.BtnExcluir.TabIndex = 23;
             this.BtnExcluir.Text = "Excluir";
             this.BtnExcluir.UseVisualStyleBackColor = true;
+            this.BtnExcluir.Click += new System.EventHandler(this.BtnExcluir_Click);
             // 
             // TxtBusca
             // 
@@ -278,6 +280,7 @@
             this.BtnBusca.TabIndex = 25;
             this.BtnBusca.Text = "Busca";
             this.BtnBusca.UseVisualStyleBackColor = true;
+            this.BtnBusca.Click += new System.EventHandler(this.BtnBusca_Click);
             // 
             // DtgProduto
             // 
@@ -288,6 +291,7 @@
             this.DtgProduto.RowTemplate.Height = 24;
             this.DtgProduto.Size = new System.Drawing.Size(708, 150);
             this.DtgProduto.TabIndex = 19;
+            this.DtgProduto.RowHeaderMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.DtgProduto_RowHeaderMouseDoubleClick);
             // 
             // CblFornecedor
             // 
@@ -300,7 +304,7 @@
             // LblAleatorio
             // 
             this.LblAleatorio.AutoSize = true;
-            this.LblAleatorio.Location = new System.Drawing.Point(381, 151);
+            this.LblAleatorio.Location = new System.Drawing.Point(739, 433);
             this.LblAleatorio.Name = "LblAleatorio";
             this.LblAleatorio.Size = new System.Drawing.Size(61, 16);
             this.LblAleatorio.TabIndex = 27;
