@@ -46,4 +46,3 @@ C:\Users\wilju\OneDrive\Documents\GitHub\Trabalho-Semestral-de-Csharp\trblh_seme
 C:\Users\wilju\OneDrive\Documents\GitHub\Trabalho-Semestral-de-Csharp\trblh_semestral\trblh_semestral\obj\Debug\trblh_semestral.FrmInformacoes.resources
 C:\Users\wilju\OneDrive\Documents\GitHub\Trabalho-Semestral-de-Csharp\trblh_semestral\trblh_semestral\bin\Debug\Dapper.dll
 C:\Users\wilju\OneDrive\Documents\GitHub\Trabalho-Semestral-de-Csharp\trblh_semestral\trblh_semestral\bin\Debug\Dapper.xml
-C:\Users\wilju\OneDrive\Documents\GitHub\Trabalho-Semestral-de-Csharp\trblh_semestral\trblh_semestral\obj\Debug\trblh_semestral.FrmAjuda.resources

@@ -74,13 +74,57 @@ namespace trblh_semestral
             TxtEndereco.Clear();
         }
 
-        private void VerificarNomeFornecedor()
+        private dynamic VerificarNomeFornecedor()
         {
             try
             {
-                
+                var query = $"SELECT EXISTS(SELECT 1 FROM Fornecedor WHERE nomeFornecedor = '{TxtFornecedor.Text}');";
+                var resultado = conexao.Query(sql: query);
+                if (resultado == null)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            catch (NpgsqlException ex)
+            {
+                MessageBox.Show("Erro: " + ex.Message);
+                return false;
             }
         }
+
+        public bool VerificarCadastroExistente(string valorAProcurar)
+        {
+            string connectionString = "Server=localhost; " +
+                "Port=5432; " +
+                "User ID=postgres; " +
+                "Password=postgres; " +
+                "Database=ProjetoSemestralCsharp;" +
+                "Pooling=true;";
+            using (NpgsqlConnection conexao = new NpgsqlConnection(connectionString))
+            {
+                conexao.Open();
+
+                string query = "SELECT COUNT(*) FROM MinhaTabela WHERE ColunaA = @ValorParaProcurar;";
+                using (NpgsqlCommand cmd = new NpgsqlCommand(query, conexao))
+                {
+                    cmd.Parameters.AddWithValue("@ValorParaProcurar", valorAProcurar);
+
+                    int count = (int)cmd.ExecuteScalar();
+
+                    return count > 0; // Retorna true se o registro existe, false caso contrário
+                }
+            }
+        }
+
+
+
+
+
+
         private void BtnCadastro_Click(object sender, EventArgs e)
         {
             if (!string.IsNullOrEmpty(TxtFornecedor.Text) &&
@@ -88,20 +132,31 @@ namespace trblh_semestral
                 !string.IsNullOrEmpty(TxtTelefone.Text)&&
                 !string.IsNullOrEmpty(TxtEndereco.Text))
             {
-                try
+                string verFor = TxtFornecedor.Text; // Substitua pelo valor recebido do TextBox
+                bool cadastroExiste = VerificarCadastroExistente(verFor);
+                if (cadastroExiste)
                 {
-
-                    var query = $"INSERT INTO Fornecedor (nomeFornecedor, telefone, email, endereco) " +
-                        $"VALUES ('{TxtFornecedor.Text}','{TxtTelefone.Text}','{TxtEmail.Text}','{TxtEndereco.Text}');";
-
-
-                    conexao.Query(sql: query); //Executa a inserção de dados
-                    MessageBox.Show("Fornecedor cadastrado com sucesso!");
-                    Recarrega();
+                    MessageBox.Show("Fornecedor já registrado!!", "Atenção!!");
+                    //Recarrega();
                 }
-                catch (NpgsqlException ex)
+                else
                 {
-                    MessageBox.Show("Erro: " + ex.Message);
+                    try
+                    {
+                   
+
+                        var query = $"INSERT INTO Fornecedor (nomeFornecedor, telefone, email, endereco) " +
+                            $"VALUES ('{TxtFornecedor.Text}','{TxtTelefone.Text}','{TxtEmail.Text}','{TxtEndereco.Text}');";
+
+
+                        conexao.Query(sql: query); //Executa a inserção de dados
+                        MessageBox.Show("Fornecedor cadastrado com sucesso!");
+                        Recarrega();
+                    }
+                    catch (NpgsqlException ex)
+                    {
+                        MessageBox.Show("Erro: " + ex.Message);
+                    }
                 }
             }
             else
@@ -234,6 +289,17 @@ namespace trblh_semestral
             {
                 MessageBox.Show("Preencha o campo!");
             }
+        }
+
+        private void TsmAjuda_Click(object sender, EventArgs e)
+        {
+            FrmInformacoes frmInformacoes = new FrmInformacoes();
+            frmInformacoes.ShowDialog();
+        }
+
+        private void TsmVoltar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

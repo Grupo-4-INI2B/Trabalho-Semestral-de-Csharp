@@ -108,11 +108,7 @@ namespace trblh_semestral
             DtValidade.Value= DateTime.Now;
         }
 
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
+        
         private void BtnCadastro_Click(object sender, EventArgs e)
         {
             if (!string.IsNullOrEmpty(TxtProduto.Text) &&
@@ -354,6 +350,22 @@ namespace trblh_semestral
             {
                 MessageBox.Show("Preencha o campo!");
             }
+        }
+
+        private void TsmAjuda_Click(object sender, EventArgs e)
+        {
+            FrmInformacoes FrmInformacoes = new FrmInformacoes();
+            FrmInformacoes.ShowDialog();
+        }
+
+        private void TsmVoltar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void FrmCadProd_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
