@@ -76,32 +76,38 @@ namespace trblh_semestral
 
         private void VerificarNomeFornecedor()
         {
-            try
-            {
+            //try
+            //{
                 
-            }
+            //}
         }
         private void BtnCadastro_Click(object sender, EventArgs e)
         {
             if (!string.IsNullOrEmpty(TxtFornecedor.Text) &&
                 !string.IsNullOrEmpty(TxtEmail.Text) &&
-                !string.IsNullOrEmpty(TxtTelefone.Text)&&
+                !string.IsNullOrEmpty(TxtTelefone.Text) &&
                 !string.IsNullOrEmpty(TxtEndereco.Text))
             {
-                try
+                var procura = $"SELECT nomeFornecedor FROM Fornecedor" +
+                        $"WHERE nomeFornecedor='{TxtFornecedor.Text}';";
+                if (procura != null)
                 {
-
-                    var query = $"INSERT INTO Fornecedor (nomeFornecedor, telefone, email, endereco) " +
-                        $"VALUES ('{TxtFornecedor.Text}','{TxtTelefone.Text}','{TxtEmail.Text}','{TxtEndereco.Text}');";
-
-
-                    conexao.Query(sql: query); //Executa a inserção de dados
-                    MessageBox.Show("Fornecedor cadastrado com sucesso!");
-                    Recarrega();
+                    MessageBox.Show("Já existe um fornecedor com esse nome cadastrado");
                 }
+                else {
+                    try {
+                            var query = $"INSERT INTO Fornecedor (nomeFornecedor, telefone, email, endereco) " +
+                                $"VALUES ('{TxtFornecedor.Text}','{TxtTelefone.Text}','{TxtEmail.Text}','{TxtEndereco.Text}');";
+
+
+                            conexao.Query(sql: query); //Executa a inserção de dados
+                            MessageBox.Show("Fornecedor cadastrado com sucesso!");
+                            Recarrega();
+                        }
                 catch (NpgsqlException ex)
-                {
-                    MessageBox.Show("Erro: " + ex.Message);
+                    {
+                        MessageBox.Show("Erro: " + ex.Message);
+                    }
                 }
             }
             else
@@ -163,28 +169,27 @@ namespace trblh_semestral
 
         private void BtnEditar_Click(object sender, EventArgs e)
         {
-            try
-            {
-                //Fornecedor fornecedor = new Fornecedor();
-                var update = $"UPDATE Fornecedor SET nomeFornecedor = '{TxtFornecedor.Text}'," +
-                    $"telefone = '{TxtTelefone.Text}'," +
-                    $"email = '{TxtEmail.Text}'," +
-                    $"endereco = '{TxtEndereco.Text}'" +
-                    $"WHERE idFornecedor = {this.idFornecedor};";
+                try
+                {
+                    //Fornecedor fornecedor = new Fornecedor();
+                    var update = $"UPDATE Fornecedor SET nomeFornecedor = '{TxtFornecedor.Text}'," +
+                        $"telefone = '{TxtTelefone.Text}'," +
+                        $"email = '{TxtEmail.Text}'," +
+                        $"endereco = '{TxtEndereco.Text}'" +
+                        $"WHERE idFornecedor = {this.idFornecedor};";
 
-                conexao.Query(sql: update);
+                    conexao.Query(sql: update);
 
-                MessageBox.Show("Dados atualizados com sucesso!!");
+                    MessageBox.Show("Dados atualizados com sucesso!!");
 
-                Recarrega();
+                    Recarrega();
+                }
+                catch (NpgsqlException ex)
+                {
+                    MessageBox.Show("Erro: " + ex.Message);
+                    // TslPrincipal.Text = ex.Message;
+                }
             }
-            catch (NpgsqlException ex)
-            {
-                MessageBox.Show("Erro: " + ex.Message);
-                // TslPrincipal.Text = ex.Message;
-            }
-        }
-
         private void BtnExcluir_Click(object sender, EventArgs e)
         {
             DialogResult resultado = MessageBox.Show("Deseja excluir este registro?", "Atenção!!!", MessageBoxButtons.YesNo);
