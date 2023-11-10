@@ -82,11 +82,13 @@ namespace trblh_semestral
                 !string.IsNullOrEmpty(TxtTelefone.Text) &&
                 !string.IsNullOrEmpty(TxtEndereco.Text))
             {
-                var procura = $"SELECT nomeFornecedor FROM Fornecedor" +
-                        $"WHERE nomeFornecedor='{TxtFornecedor.Text}';";
-                if (procura != null)
+                string procura = $"SELECT * FROM Fornecedor" +
+                        $" WHERE nomeFornecedor='{TxtFornecedor.Text}';";
+                dynamic fornec = conexao.Query<Fornecedor>(sql: procura);
+                if (fornec.Count > 0)
                 {
-                    MessageBox.Show("Já existe um fornecedor com esse nome cadastrado","Atenção!!");
+                    MessageBox.Show("Já existe um fornecedor com esse nome cadastrado", "Atenção!!");
+
                 }
                 else {
                     try {
