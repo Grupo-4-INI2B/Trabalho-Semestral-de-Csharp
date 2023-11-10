@@ -29,135 +29,249 @@
         private void InitializeComponent()
         {
             this.LblAreaCad = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.LblFornecedor = new System.Windows.Forms.Label();
+            this.LblTelefone = new System.Windows.Forms.Label();
+            this.LblEmail = new System.Windows.Forms.Label();
+            this.LblEndereco = new System.Windows.Forms.Label();
+            this.TxtFornecedor = new System.Windows.Forms.TextBox();
+            this.TxtEmail = new System.Windows.Forms.TextBox();
+            this.TxtTelefone = new System.Windows.Forms.TextBox();
+            this.TxtEndereco = new System.Windows.Forms.TextBox();
+            this.BtnBusca = new System.Windows.Forms.Button();
+            this.TxtBusca = new System.Windows.Forms.TextBox();
+            this.BtnExcluir = new System.Windows.Forms.Button();
+            this.BtnEditar = new System.Windows.Forms.Button();
+            this.BtnCancelar = new System.Windows.Forms.Button();
+            this.BtnCadastro = new System.Windows.Forms.Button();
+            this.DtgFornecedor = new System.Windows.Forms.DataGridView();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.TsmAjuda = new System.Windows.Forms.ToolStripMenuItem();
+            this.TsmVoltar = new System.Windows.Forms.ToolStripMenuItem();
+            ((System.ComponentModel.ISupportInitialize)(this.DtgFornecedor)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // LblAreaCad
             // 
             this.LblAreaCad.AutoSize = true;
             this.LblAreaCad.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.LblAreaCad.Font = new System.Drawing.Font("Cascadia Mono SemiBold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblAreaCad.Location = new System.Drawing.Point(183, 24);
+            this.LblAreaCad.Font = new System.Drawing.Font("Cascadia Mono", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblAreaCad.Location = new System.Drawing.Point(217, 28);
             this.LblAreaCad.Name = "LblAreaCad";
-            this.LblAreaCad.Size = new System.Drawing.Size(442, 30);
+            this.LblAreaCad.Size = new System.Drawing.Size(408, 27);
             this.LblAreaCad.TabIndex = 0;
             this.LblAreaCad.Text = "Área de Cadastro de Fornecedores:";
             // 
-            // label1
+            // LblFornecedor
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Cascadia Mono", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(122, 85);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(60, 22);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Nome:";
+            this.LblFornecedor.AutoSize = true;
+            this.LblFornecedor.Font = new System.Drawing.Font("Cascadia Mono", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblFornecedor.Location = new System.Drawing.Point(102, 81);
+            this.LblFornecedor.Name = "LblFornecedor";
+            this.LblFornecedor.Size = new System.Drawing.Size(60, 22);
+            this.LblFornecedor.TabIndex = 1;
+            this.LblFornecedor.Text = "Nome:";
             // 
-            // label2
+            // LblTelefone
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Cascadia Mono", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(132, 129);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(50, 22);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "CPF:";
+            this.LblTelefone.AutoSize = true;
+            this.LblTelefone.Font = new System.Drawing.Font("Cascadia Mono", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblTelefone.Location = new System.Drawing.Point(405, 85);
+            this.LblTelefone.Name = "LblTelefone";
+            this.LblTelefone.Size = new System.Drawing.Size(100, 22);
+            this.LblTelefone.TabIndex = 3;
+            this.LblTelefone.Text = "Telefone:";
             // 
-            // label3
+            // LblEmail
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Cascadia Mono", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(405, 129);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(100, 22);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Telefone:";
+            this.LblEmail.AutoSize = true;
+            this.LblEmail.Font = new System.Drawing.Font("Cascadia Mono", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblEmail.Location = new System.Drawing.Point(102, 126);
+            this.LblEmail.Name = "LblEmail";
+            this.LblEmail.Size = new System.Drawing.Size(80, 22);
+            this.LblEmail.TabIndex = 4;
+            this.LblEmail.Text = "E-mail:";
+            this.LblEmail.Click += new System.EventHandler(this.label4_Click);
             // 
-            // label4
+            // LblEndereco
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Cascadia Mono", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(405, 85);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(80, 22);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "E-mail:";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+            this.LblEndereco.AutoSize = true;
+            this.LblEndereco.Font = new System.Drawing.Font("Cascadia Mono", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblEndereco.Location = new System.Drawing.Point(405, 128);
+            this.LblEndereco.Name = "LblEndereco";
+            this.LblEndereco.Size = new System.Drawing.Size(100, 22);
+            this.LblEndereco.TabIndex = 5;
+            this.LblEndereco.Text = "Endereço:";
             // 
-            // label5
+            // TxtFornecedor
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Cascadia Mono", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(269, 172);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(100, 22);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "Endereço:";
+            this.TxtFornecedor.Location = new System.Drawing.Point(168, 83);
+            this.TxtFornecedor.Name = "TxtFornecedor";
+            this.TxtFornecedor.Size = new System.Drawing.Size(197, 22);
+            this.TxtFornecedor.TabIndex = 6;
             // 
-            // textBox1
+            // TxtEmail
             // 
-            this.textBox1.Location = new System.Drawing.Point(188, 85);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(167, 22);
-            this.textBox1.TabIndex = 6;
+            this.TxtEmail.Location = new System.Drawing.Point(188, 126);
+            this.TxtEmail.Name = "TxtEmail";
+            this.TxtEmail.Size = new System.Drawing.Size(178, 22);
+            this.TxtEmail.TabIndex = 7;
             // 
-            // textBox2
+            // TxtTelefone
             // 
-            this.textBox2.Location = new System.Drawing.Point(490, 85);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(167, 22);
-            this.textBox2.TabIndex = 7;
+            this.TxtTelefone.Location = new System.Drawing.Point(511, 83);
+            this.TxtTelefone.Name = "TxtTelefone";
+            this.TxtTelefone.Size = new System.Drawing.Size(177, 22);
+            this.TxtTelefone.TabIndex = 9;
             // 
-            // textBox3
+            // TxtEndereco
             // 
-            this.textBox3.Location = new System.Drawing.Point(188, 129);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(167, 22);
-            this.textBox3.TabIndex = 8;
+            this.TxtEndereco.Location = new System.Drawing.Point(511, 128);
+            this.TxtEndereco.Name = "TxtEndereco";
+            this.TxtEndereco.Size = new System.Drawing.Size(177, 22);
+            this.TxtEndereco.TabIndex = 10;
             // 
-            // textBox4
+            // BtnBusca
             // 
-            this.textBox4.Location = new System.Drawing.Point(511, 127);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(146, 22);
-            this.textBox4.TabIndex = 9;
+            this.BtnBusca.BackColor = System.Drawing.Color.Azure;
+            this.BtnBusca.Font = new System.Drawing.Font("Cascadia Mono", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnBusca.Location = new System.Drawing.Point(466, 226);
+            this.BtnBusca.Name = "BtnBusca";
+            this.BtnBusca.Size = new System.Drawing.Size(85, 31);
+            this.BtnBusca.TabIndex = 32;
+            this.BtnBusca.Text = "Buscar";
+            this.BtnBusca.UseVisualStyleBackColor = false;
+            this.BtnBusca.Click += new System.EventHandler(this.BtnBusca_Click);
             // 
-            // textBox5
+            // TxtBusca
             // 
-            this.textBox5.Location = new System.Drawing.Point(375, 172);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(188, 22);
-            this.textBox5.TabIndex = 10;
+            this.TxtBusca.Location = new System.Drawing.Point(72, 230);
+            this.TxtBusca.Name = "TxtBusca";
+            this.TxtBusca.Size = new System.Drawing.Size(388, 22);
+            this.TxtBusca.TabIndex = 31;
+            // 
+            // BtnExcluir
+            // 
+            this.BtnExcluir.BackColor = System.Drawing.Color.Azure;
+            this.BtnExcluir.Font = new System.Drawing.Font("Cascadia Mono", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnExcluir.Location = new System.Drawing.Point(658, 230);
+            this.BtnExcluir.Name = "BtnExcluir";
+            this.BtnExcluir.Size = new System.Drawing.Size(100, 31);
+            this.BtnExcluir.TabIndex = 30;
+            this.BtnExcluir.Text = "Excluir";
+            this.BtnExcluir.UseVisualStyleBackColor = false;
+            this.BtnExcluir.Click += new System.EventHandler(this.BtnExcluir_Click);
+            // 
+            // BtnEditar
+            // 
+            this.BtnEditar.BackColor = System.Drawing.Color.Azure;
+            this.BtnEditar.Font = new System.Drawing.Font("Cascadia Mono", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnEditar.Location = new System.Drawing.Point(566, 230);
+            this.BtnEditar.Name = "BtnEditar";
+            this.BtnEditar.Size = new System.Drawing.Size(86, 31);
+            this.BtnEditar.TabIndex = 29;
+            this.BtnEditar.Text = "Editar";
+            this.BtnEditar.UseVisualStyleBackColor = false;
+            this.BtnEditar.Click += new System.EventHandler(this.BtnEditar_Click);
+            // 
+            // BtnCancelar
+            // 
+            this.BtnCancelar.BackColor = System.Drawing.Color.Azure;
+            this.BtnCancelar.Font = new System.Drawing.Font("Cascadia Mono", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCancelar.Location = new System.Drawing.Point(424, 166);
+            this.BtnCancelar.Name = "BtnCancelar";
+            this.BtnCancelar.Size = new System.Drawing.Size(113, 37);
+            this.BtnCancelar.TabIndex = 28;
+            this.BtnCancelar.Text = "Cancelar";
+            this.BtnCancelar.UseVisualStyleBackColor = false;
+            this.BtnCancelar.Click += new System.EventHandler(this.BtnCancelar_Click);
+            // 
+            // BtnCadastro
+            // 
+            this.BtnCadastro.BackColor = System.Drawing.Color.Azure;
+            this.BtnCadastro.Font = new System.Drawing.Font("Cascadia Mono", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCadastro.Location = new System.Drawing.Point(282, 166);
+            this.BtnCadastro.Name = "BtnCadastro";
+            this.BtnCadastro.Size = new System.Drawing.Size(116, 37);
+            this.BtnCadastro.TabIndex = 27;
+            this.BtnCadastro.Text = "Cadastrar";
+            this.BtnCadastro.UseVisualStyleBackColor = false;
+            this.BtnCadastro.Click += new System.EventHandler(this.BtnCadastro_Click);
+            // 
+            // DtgFornecedor
+            // 
+            this.DtgFornecedor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DtgFornecedor.Location = new System.Drawing.Point(50, 270);
+            this.DtgFornecedor.Name = "DtgFornecedor";
+            this.DtgFornecedor.RowHeadersWidth = 51;
+            this.DtgFornecedor.RowTemplate.Height = 24;
+            this.DtgFornecedor.Size = new System.Drawing.Size(708, 168);
+            this.DtgFornecedor.TabIndex = 26;
+            this.DtgFornecedor.RowHeaderMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.DtgFornecedor_RowHeaderMouseDoubleClick);
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.BackColor = System.Drawing.Color.Transparent;
+            this.menuStrip1.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.TsmAjuda,
+            this.TsmVoltar});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(800, 26);
+            this.menuStrip1.TabIndex = 33;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // TsmAjuda
+            // 
+            this.TsmAjuda.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.TsmAjuda.Name = "TsmAjuda";
+            this.TsmAjuda.Size = new System.Drawing.Size(62, 24);
+            this.TsmAjuda.Text = "Ajuda";
+            this.TsmAjuda.Click += new System.EventHandler(this.TsmAjuda_Click);
+            // 
+            // TsmVoltar
+            // 
+            this.TsmVoltar.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.TsmVoltar.Name = "TsmVoltar";
+            this.TsmVoltar.Size = new System.Drawing.Size(62, 24);
+            this.TsmVoltar.Text = "Voltar";
+            this.TsmVoltar.Click += new System.EventHandler(this.TsmVoltar_Click);
             // 
             // FrmCadFor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.SkyBlue;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.BtnBusca);
+            this.Controls.Add(this.TxtBusca);
+            this.Controls.Add(this.BtnExcluir);
+            this.Controls.Add(this.BtnEditar);
+            this.Controls.Add(this.BtnCancelar);
+            this.Controls.Add(this.BtnCadastro);
+            this.Controls.Add(this.DtgFornecedor);
+            this.Controls.Add(this.TxtEndereco);
+            this.Controls.Add(this.TxtTelefone);
+            this.Controls.Add(this.TxtEmail);
+            this.Controls.Add(this.TxtFornecedor);
+            this.Controls.Add(this.LblEndereco);
+            this.Controls.Add(this.LblEmail);
+            this.Controls.Add(this.LblTelefone);
+            this.Controls.Add(this.LblFornecedor);
             this.Controls.Add(this.LblAreaCad);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FrmCadFor";
-            this.Text = "Cadastro Fornecedores";
+            this.Text = "Cadastro e Pesquisa Fornecedores";
             this.Load += new System.EventHandler(this.FrmCadFor_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.DtgFornecedor)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -166,15 +280,23 @@
         #endregion
 
         private System.Windows.Forms.Label LblAreaCad;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Label LblFornecedor;
+        private System.Windows.Forms.Label LblTelefone;
+        private System.Windows.Forms.Label LblEmail;
+        private System.Windows.Forms.Label LblEndereco;
+        private System.Windows.Forms.TextBox TxtFornecedor;
+        private System.Windows.Forms.TextBox TxtEmail;
+        private System.Windows.Forms.TextBox TxtTelefone;
+        private System.Windows.Forms.TextBox TxtEndereco;
+        private System.Windows.Forms.Button BtnBusca;
+        private System.Windows.Forms.TextBox TxtBusca;
+        private System.Windows.Forms.Button BtnExcluir;
+        private System.Windows.Forms.Button BtnEditar;
+        private System.Windows.Forms.Button BtnCancelar;
+        private System.Windows.Forms.Button BtnCadastro;
+        private System.Windows.Forms.DataGridView DtgFornecedor;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem TsmAjuda;
+        private System.Windows.Forms.ToolStripMenuItem TsmVoltar;
     }
 }

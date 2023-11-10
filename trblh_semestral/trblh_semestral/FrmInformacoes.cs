@@ -41,5 +41,10 @@ namespace trblh_semestral
         {
 
         }
+
+        private void TsmVoltar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
