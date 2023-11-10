@@ -50,11 +50,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.label1.Font = new System.Drawing.Font("Cascadia Mono SemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(247, 18);
+            this.label1.Font = new System.Drawing.Font("Cascadia Mono", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(288, 19);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(322, 32);
+            this.label1.Size = new System.Drawing.Size(276, 27);
             this.label1.TabIndex = 0;
             this.label1.Text = "Informações do Sistema";
             // 
@@ -193,15 +193,16 @@
             this.TsmVoltar});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(824, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(824, 26);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // TsmVoltar
             // 
             this.TsmVoltar.BackColor = System.Drawing.Color.White;
+            this.TsmVoltar.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TsmVoltar.Name = "TsmVoltar";
-            this.TsmVoltar.Size = new System.Drawing.Size(62, 24);
+            this.TsmVoltar.Size = new System.Drawing.Size(70, 26);
             this.TsmVoltar.Text = "Voltar";
             this.TsmVoltar.Click += new System.EventHandler(this.TsmVoltar_Click);
             // 
