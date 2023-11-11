@@ -10,5 +10,5 @@ Grupo 4:
 - Juliana Tano n20
 
 Adendo: Para que o projeto funcione, precisara da
-aplicação pgAdmin, criar uma conexão com o loopback(localhost), o banco de dados e executar
-o script sql que se localiza na pasta Banco de Dados.
+aplicação pgAdmin, criar uma conexão com o loopback(localhost), criar um banco de dados e 
+executar o script sql que se localiza na pasta Banco de Dados.
